@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
+html,body {
+	font-size: 13px;	/*基準となるフォントサイズ。*/
+	overflow-x: hidden;
+}
+@media screen and (min-width:900px) {
+
+    html, body {
+        font-size: 16px;	/*基準となるフォントサイズ。*/
+    }
+
+}
+body {
+    font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	
+    color: rgb(16, 15, 15);		
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: serif;
+	background-size: cover;
+    background-image: url(../images/236A1238.jpg),url(../images/236A1371.jpg),url(../images/236A1542.jpg);
+    animation: image_anime 10s  infinite;
+	animation-delay: 5s ;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+@keyframes image_anime {
+	0% {
+		background-image: url(../images/236A1238.jpg); 
+	}
+	35% {
+		/* 切り替え後の画像 */
+		background-image: url(../images/236A1371.jpg); 
+	}
+	70% {
+		/* 切り替え後の画像 */
+		background-image: url(../images/236A1542.jpg); 
+	}
+	100% {
+		background-image: url(../images/236A1238.jpg); 
+	}
+	0%,35%,70% {
+		opacity: 1;
+	}
+}
+
+header settings 
+
+header h1 {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    background: rgba(32, 221, 7, 0.9);
+    box-shadow: 0px 8px 8px 0px rgba(217, 8, 8, 0.995);
+    margin: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1em;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,.2);
+    }
+}
+
+.header-h1-img-wrap {
+    position: absolute;
+  }
+
+  .header-h1-img-wrap::before {
+    animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    background-repeat:  no-repeat;
+    margin: 0;
+    width: 250px;
+    height: 200px;
+
+    content: "";
+    inset: 0; 
+    pointer-events: none; 
+    position: absolute;
+    z-index: 2;
+  }
+
+  @keyframes img-wrap {
+
+    0% {
+        transform: translateX(225px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+      }
+      40%,100% {
+        opacity: 1;
+      }
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.global-navi ul {
+    color: rgb(255, 0, 0);
+    text-shadow: -6px 3px 0 #353434;
+    margin: 0;
+    padding: 5;
+    width: 1000px;
+    display: flex; 
+    justify-content: space-between;
+    
+}
+.global-navi ul li a {
+    color: var(--primary-color);
+    text-decoration: none; 
+    font-weight: 1000;
+    position: absolute;
+    nav-left: 3px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:1230px) {
+    .global-navi {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 20px;
+    }
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--primary-color);
+        position: absolute;
+        transition: ease .4s;
+    }
+    .nav-toggle span:nth-child(1) {
+        top: 0;
+    }
+    .nav-toggle span:nth-child(2) {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    } 
+    .nav-toggle span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .nav-toggle.show span:nth-child(1) {
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    .nav-toggle.show span:nth-child(2) {
+        opacity: 0;
+    } 
+    .nav-toggle.show span:nth-child(3) {
+        bottom: 9px;
+        transform: rotate(-45deg);
+    }
+
+    .global-navi {
+        position: fixed;
+        width: 100%;
+        top: 84px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1em;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+    .global-navi.show {
+        opacity: 1;
+        visibility: visible;
+        background: #fff;
+    }
+    .global-navi ul {
+        width: 100%;
+        flex-flow: column;
+        text-align: center;
+        padding: 2em;
+        margin: 2em 0;
+        border-top: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .global-navi ul li {
+        font-size: 18px;
+    }
+    .global-navi ul li a {
+        display: block;
+        padding: 1em;
+    }
+}

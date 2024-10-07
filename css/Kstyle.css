@@ -104,6 +104,9 @@ header #logo {
 #main p {
 	padding: 0 20px 20px;	/*上、左右、下への余白*/
 }
+#main a{
+	padding: 0 20px 20px;
+}
 /*他*/
 #main p + p {
 	margin-top: -10px;

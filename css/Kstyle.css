@@ -430,6 +430,36 @@ body.s-n #sub,body.s-n #footermenu,.m-n {display: none;}
 
 }
 
+#food_spots,#hotel{
+	display: flex;
+	justify-content: space-around;
+}
+#food_spots img,#hotel img{
+	width: auto;
+	height: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#food_spots a{
+	font-size: 90%;
+}
+#food_spots p{
+	font-size: 90%;
+}
+#box1{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+#box2{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+
+
 
 
 /*画面幅480px以下の設定
@@ -503,5 +533,9 @@ ol {
 img.fr,img.fl {float: none;margin: 0;width: 100%;}
 .sh {display:block;}
 .pc {display:none;}
+
+#food_spots img,#hotel img{
+	height: 100%;
+}
 
 }

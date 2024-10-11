@@ -104,9 +104,6 @@ header #logo {
 #main p {
 	padding: 0 20px 20px;	/*上、左右、下への余白*/
 }
-#main a{
-	padding: 0 20px 20px;
-}
 /*他*/
 #main p + p {
 	margin-top: -10px;
@@ -120,35 +117,6 @@ header #logo {
 	padding-top: 30px;
 }
 
-/* --------------------ここから新しく追加した分 --------------*/
-#food_spots,#hotel,#souvenir{
-	display: flex;
-	justify-content: space-around;
-}
-#food_spots img,#hotel img,#souvenir img{
-	width: auto;
-	height: 200px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-#food_spots a{
-	font-size: 90%;
-}
-#food_spots p{
-	font-size: 90%;
-}
-#box1{
-	padding: 5px;
-	width: 50%;
-	display: grid;
-	justify-content: center;
-}
-#box2{
-	padding: 5px;
-	width: 50%;
-	display: grid;
-	justify-content: center;
-}
 /*Galleryページのサムネイル
 ---------------------------------------------------------------------------*/
 /*写真全体を囲むブロック*/
@@ -459,6 +427,8 @@ body.s-n #sub,body.s-n #footermenu,.m-n {display: none;}
 
 }
 
+
+
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:480px){
@@ -530,9 +500,5 @@ ol {
 img.fr,img.fl {float: none;margin: 0;width: 100%;}
 .sh {display:block;}
 .pc {display:none;}
-
-#food_spots img,#hotel img,#souvenir img{
-	height: 100%;
-}
 
 }

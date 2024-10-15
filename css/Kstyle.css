@@ -102,7 +102,7 @@ header #logo {
 }
 /*段落(p)タグ*/
 #main p {
-	padding: 0 20px 20px;	/*上、左右、下への余白*/
+	padding: 0 20px 15px;	/*上、左右、下への余白*/
 }
 #main a{
 	padding: 0 20px 20px;
@@ -148,6 +148,19 @@ header #logo {
 	width: 50%;
 	display: grid;
 	justify-content: center;
+}
+#O_text_title{
+	cursor: pointer;
+	border: solid 3px #949494;
+	border-radius: 30px;
+	background: #dfc3ca;
+	color: #F00;
+}
+#O_text_explanation{
+	display: none;
+}
+#O_text_buss{
+	display:inline;
 }
 /*Galleryページのサムネイル
 ---------------------------------------------------------------------------*/

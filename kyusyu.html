@@ -104,23 +104,23 @@
 		</div>
 		<div id="box2"> 
 			<img src="images/oita/P_01.jpg" alt="なにかの写真">
-			<p>温泉旅館か東横イン</p>
+			<p id="text_hotel2">温泉旅館か東横イン</p>
 		</div>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
-		<a href="https://www.ferry-sunflower.co.jp/news/article/hanshindangan.html" target="_blank">
+	<div id="O_transportation">
+		<p    id="O_text_title">
 			編集者おヌヌメ！！！<br>
 			さんふらわあ　ごーるど・ぱーるで0泊2日!往復１万円(電話予約&現金のみ)
-		</a>
-		<p>例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
+		</p>
+		<p id="O_text_explanation">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
 			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
 			19:00神戸港を出発→船内で自由に過ごす(食料を持ち込むのが安く済むゾ)。<br>
 			翌日土曜日07:20大分港に到着。<br>
 			18:30には乗船手付きをしておき、19:30大分港発。<br>
 			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
 		</p>
-		<p>高速バス　22:00発8:12着往復17600円</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
 	</div>
 	<h3>お土産</h3>
 	<div id="souvenir">
@@ -197,7 +197,7 @@
 		<p>温泉旅館か東横イン</p>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
+	<div id="transportation">
 		<p>さんふらわあ　さつま・きりしま</p>
 		<p>車かヒッチハイクか高速バス</p>
 	</div>
@@ -302,6 +302,11 @@ if (OCwindowWidth() <= 800) {
 
 <!--lightbox用jsファイルの読み込み-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
-
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
 </body>
 </html>

@@ -39,13 +39,13 @@
 	<h3>写真</h3>
 
 	<div class="list">
-		<a href="images/oita/P_01.jpg" data-lightbox="group1" data-title="大分の写真">
+		<a href="images/oita/P_01.jpg" rel="lightbox[group1]" data-title="大分の写真">
 		<figure><img src="images/oita/P_01.jpg" alt="大分の写真"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images/oita/P_02.jpg" data-lightbox="group1" data-title="大分の写真">
+		<a href="images/oita/P_02.jpg" rel="lightbox[group1]" data-title="大分の写真">
 		<figure><img src="images/oita/P_02.jpg" alt="大分の写真"></figure>
 		</a>
 	</div>
@@ -74,14 +74,21 @@
 		</a>
 	</div>
 
-
 	<h3>地図</h3>
 	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19551.305307531653!2d131.4692334563445!3d33.30982418939008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a7b960bca539%3A0x8bdccd2d35d910f2!2z44G544Gj44G35Zyw542E44KB44GQ44KK!5e1!3m2!1sja!2sjp!4v1728265106199!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	<h3>飲食店</h3>
 	<div id="food_spots">
-		<p>マックスバリュー及びKOHYO及びフジ</p>
-		<a href="https://stores.marugame.com/110618?utm_source=google_serps&utm_medium=gmb&utm_campaign=gbpwebs" target="_blank">丸亀製麺別府店</a>
+		<div id="box1"> 
+			<img src="images/oita/P_01.jpg" alt="なにかの写真">
+			<p>マックスバリュー及びKOHYO及びフジ</p>
+		</div>
+		<div id="box2"> 
+			<img src="images/oita/P_01.jpg" alt="丸亀の写真">
+			<a href="https://stores.marugame.com/110618?utm_source=google_serps&utm_medium=gmb&utm_campaign=gbpwebs" target="_blank">
+				丸亀製麺別府店
+			</a>
+		</div>
 	</div>
 	<h3>観光スポット</h3>
 	<div id="sightseeing_spots">
@@ -89,17 +96,43 @@
 	</div>
 	<h3>ホテル</h3>
 	<div id="hotel">
-		<a href="https://www.ferry-sunflower.co.jp/" target="_blank">さんふらわあ　むらさき・くれない・ごーるど・ぱーる</a>
-		<p>温泉旅館か東横イン</p>
+		<div id="box1">
+			<img src="images/oita/PS_03.jpg" alt="なにかの写真">
+			<a href="https://www.ferry-sunflower.co.jp/" target="_blank">
+				さんふらわあ　むらさき・くれない・ごーるど・ぱーる
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="images/oita/P_01.jpg" alt="なにかの写真">
+			<p id="text_hotel2">温泉旅館か東横イン</p>
+		</div>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
-		<a href="https://www.ferry-sunflower.co.jp/">さんふらわあ　むらさき・くれない・ごーるど・ぱーる</a>
-		<p>車かヒッチハイクか高速バス</p>
+	<div id="O_transportation">
+		<p    id="O_text_title">
+			編集者おヌヌメ！！！<br>
+			さんふらわあ　ごーるど・ぱーるで0泊2日!往復１万円(電話予約&現金のみ)
+		</p>
+		<p id="O_text_explanation">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
+			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
+			19:00神戸港を出発→船内で自由に過ごす(食料を持ち込むのが安く済むゾ)。<br>
+			翌日土曜日07:20大分港に到着。<br>
+			18:30には乗船手付きをしておき、19:30大分港発。<br>
+			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
 	</div>
 	<h3>お土産</h3>
-	<div id="omiya">
-		<p>明石焼き・佐世保バーガー・東京カンパネラ</p>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="images/oita/P_01.jpg" alt="お土産の写真">
+			<p>明石焼き・佐世保バーガー・東京カンパネラ</p>
+		</div>
+		<div id="box2">
+			<img src="images/oita/P_01.jpg" alt="お土産の写真">
+			<a href="http://www.yamabukiiro.com/" target="_blank">山吹色のお菓子</a>
+		</div>
+
 	</div>
 
 </div><!--/.Oita-block-->
@@ -164,12 +197,12 @@
 		<p>温泉旅館か東横イン</p>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
+	<div id="transportation">
 		<p>さんふらわあ　さつま・きりしま</p>
 		<p>車かヒッチハイクか高速バス</p>
 	</div>
 	<h3>お土産</h3>
-	<div id="omiya">
+	<div id="souvenir">
 		<p>明石焼き・佐世保バーガー・志布志バーガー・東京カンパネラ</p>
 	</div>
 
@@ -269,6 +302,11 @@ if (OCwindowWidth() <= 800) {
 
 <!--lightbox用jsファイルの読み込み-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
-
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
 </body>
 </html>

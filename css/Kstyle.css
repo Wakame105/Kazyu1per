@@ -2,7 +2,7 @@
 
 /*段落(p)タグ*/
 #main p {
-	padding: 0 20px 15px;	/*上、左右、下への余白*/
+	padding: 10px 20px 15px;	/*上、左右、下への余白*/
 }
 /* #main a{
 	padding: 0 20px 20px;
@@ -37,18 +37,31 @@
 	display: grid;
 	justify-content: center;
 }
-#O_text_title{
+#main #O_text_title{
 	cursor: pointer;
 	border: solid 3px #949494;
 	border-radius: 30px;
 	background: #dfc3ca;
 	color: #F00;
+	padding: 10px 20px 10px;
 }
 #O_text_explanation{
 	display: none;
 }
 #O_text_buss{
 	display:inline;
+}
+#O_title_tab li::after{
+    content: "";
+    position: absolute;
+    top:auto;
+    bottom: auto;
+    right: 6em;
+    display: block;
+    width: .9em;
+    height: .5em;
+    margin: auto;
+    background: no-repeat center/110% url('../images/oita/underTriangle.png');
 }
 
 

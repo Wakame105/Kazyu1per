@@ -56,20 +56,32 @@
     position: absolute;
     top:auto;
     bottom: auto;
-    right: 6em;
+    right: 16em;
     display: block;
     width: .9em;
     height: .5em;
     margin: auto;
     background: no-repeat center/110% url('../images/oita/underTriangle.png');
 }
+iframe{
+	padding-bottom: 10px;
+}
 
-
+/*画面幅1250px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1250px){
+	#O_title_tab li::after{
+		right: 6em;
+	}
+}	
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:480px)
 {
 	#food_spots img,#hotel img,#souvenir img{
 		height: 100%;
+	}
+	#O_title_tab li::after{
+		right: 4em;
 	}
 }

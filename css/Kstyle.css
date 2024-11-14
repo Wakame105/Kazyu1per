@@ -4,11 +4,14 @@
 #main p {
 	padding: 10px 20px 15px;	/*上、左右、下への余白*/
 }
-/* #main a{
-	padding: 0 20px 20px;
-} */
+#main a{
+	padding: 0 20px 0px;
+}
 
 /* --------------------ここから新しく追加した分 --------------*/
+#main .photo-block a{
+	padding: 0;
+}
 #food_spots,#hotel,#souvenir{
 	display: flex;
 	justify-content: space-around;
@@ -37,7 +40,7 @@
 	display: grid;
 	justify-content: center;
 }
-#main #O_text_title{
+#main #O_transportation li{
 	cursor: pointer;
 	border: solid 3px #949494;
 	border-radius: 30px;
@@ -45,23 +48,25 @@
 	color: #F00;
 	padding: 10px 20px 10px;
 }
-#O_text_explanation{
+#main #O_transportation p{
 	display: none;
+	background-color: #dad4ce;
+	border-radius: 10px;
 }
-#O_text_buss{
-	display:inline;
-}
-#O_title_tab li::after{
+#main #O_transportation ul li::after{
     content: "";
     position: absolute;
     top:auto;
     bottom: auto;
-    right: 16em;
+    right: 14%;
     display: block;
     width: .9em;
     height: .5em;
     margin: auto;
     background: no-repeat center/110% url('../images/oita/underTriangle.png');
+}
+#O_text_buss{
+	display:inline;
 }
 iframe{
 	padding-bottom: 10px;

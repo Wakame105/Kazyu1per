@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="css/Kstyle.css">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -94,12 +98,14 @@
 		<!--/.photo-block-->
 	<h3>地図</h3>
 	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19551.305307531653!2d131.4692334563445!3d33.30982418939008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a7b960bca539%3A0x8bdccd2d35d910f2!2z44G544Gj44G35Zyw542E44KB44GQ44KK!5e1!3m2!1sja!2sjp!4v1728265106199!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d789484.2558450999!2d130.812205741997!3d33.17408010491026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35445c95e3d84793%3A0x3f17b7f27036bee2!2z5aSn5YiG55yM!5e1!3m2!1sja!2sjp!4v1731561285830!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	<h3>飲食店</h3>
 	<div id="food_spots">
 		<div id="box1"> 
-			<img src="images/oita/P_01.jpg" alt="なにかの写真">
-			<p>マックスバリュー及びKOHYO及びフジ</p>
+			<img src="images/oita/P_04.webp" alt="東洋軒">
+			<a href="https://www.toyoken-beppu.co.jp/about/" target="_blank">
+				レストラン東洋軒
+			</a>
 		</div>
 		<div id="box2"> 
 			<img src="images/oita/P_01.jpg" alt="丸亀の写真">
@@ -135,8 +141,21 @@
 		</ul>
 		<p id="O_text_explanation">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
 			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
-			19:00神戸港を出発→船内で自由に過ごす(食料を持ち込むのが安く済むゾ)。<br>
-			翌日土曜日07:20大分港に到着。<br>
+			19:00神戸港を出発→お風呂入ったりして船旅(食料を持ち込むのが安く済むゾ)。<br>
+			翌日土曜日07:20大分港に到着。自由行動。<br>
+			18:30には乗船手付きをしておき、19:30大分港発。<br>
+			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title2">
+				最安！編集者おススメ！<br>
+				さんふらわあ　ごーるど・ぱーるで0泊2日!往復１万円(電話予約&現金のみ)
+			</li>
+		</ul>
+		<p id="O_text_explanation2">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
+			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
+			19:00神戸港を出発→お風呂入ったりして船旅(食料を持ち込むのが安く済むゾ)。<br>
+			翌日土曜日07:20大分港に到着。自由行動。<br>
 			18:30には乗船手付きをしておき、19:30大分港発。<br>
 			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
 		</p>

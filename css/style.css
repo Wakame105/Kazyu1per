@@ -3,7 +3,6 @@
 
 /*slide.cssと、lightbox.cssの読み込み
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@import url(slide.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
 
 

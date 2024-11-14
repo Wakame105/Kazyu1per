@@ -1,7 +1,8 @@
 'use stript';
 let tab = $('#O_text_title');
 let obj =  $("#O_text_explanation");
-console.log(logo);
+let tab2 = $('#O_text_title2');
+let obj2 =  $("#O_text_explanation2");
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
     // {
@@ -17,4 +18,6 @@ tab.on('click',function(){
     // } 
     obj.slideToggle();
 })
-    
+tab2.on('click',function(){
+    obj2.slideToggle();
+})

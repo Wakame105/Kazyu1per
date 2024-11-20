@@ -20,7 +20,7 @@ body {
 	font-size: 16px;
 	font-family: serif;
 	background-size: cover;
-    background-image: url(../images/236A1238.jpg),url(../images/236A1371.jpg),url(../images/236A1542.jpg);
+    background-image: url(../assets/images/236A1238.jpg),url(../assets/images/236A1371.jpg),url(../assets/images/236A1542.jpg);
     animation: image_anime 10s  infinite;
 	animation-delay: 5s ;
     cursor: pointer;
@@ -29,18 +29,18 @@ body {
 
 @keyframes image_anime {
 	0% {
-		background-image: url(../images/236A1238.jpg); 
+		background-image: url(../assets/images/236A1238.jpg); 
 	}
 	35% {
 		/* 切り替え後の画像 */
-		background-image: url(../images/236A1371.jpg); 
+		background-image: url(../assets/images/236A1371.jpg); 
 	}
 	70% {
 		/* 切り替え後の画像 */
-		background-image: url(../images/236A1542.jpg); 
+		background-image: url(../assets/images/236A1542.jpg); 
 	}
 	100% {
-		background-image: url(../images/236A1238.jpg); 
+		background-image: url(../assets/images/236A1238.jpg); 
 	}
 	0%,35%,70% {
 		opacity: 1;

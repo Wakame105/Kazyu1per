@@ -21,3 +21,18 @@ tab.on('click',function(){
 tab2.on('click',function(){
     obj2.slideToggle();
 })
+
+//==========================Jsonから読み取り=========================
+$(function(){
+    let json = "./assets/json/KOutput.json";
+    $.getJSON(json,function(data){
+        for(let i in data){
+            tab2.append(data[i].title);
+            obj2.append('<a href=' + data[i].url + ' target="_blank"> URLはこちらから </a><br>'+
+                data[i].content1 + data[i].content2 +
+                data[i].content3 + data[i].content4 +
+                data[i].content5 + data[i].content6   
+            );
+        }
+    });
+});

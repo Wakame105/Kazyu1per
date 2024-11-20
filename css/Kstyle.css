@@ -63,7 +63,7 @@
     width: .9em;
     height: .5em;
     margin: auto;
-    background: no-repeat center/110% url('../images/oita/underTriangle.png');
+    background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
 }
 #O_text_buss{
 	display:inline;

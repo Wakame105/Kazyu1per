@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*段落(p)タグ*/
+#main p {
+	padding: 10px 20px 15px;	/*上、左右、下への余白*/
+}
+#main a{
+	padding: 0 20px 0px;
+}
+
+/* --------------------ここから新しく追加した分 --------------*/
+#main .photo-block a{
+	padding: 0;
+}
+#food_spots,#hotel,#souvenir{
+	display: flex;
+	justify-content: space-around;
+}
+#food_spots img,#hotel img,#souvenir img{
+	width: auto;
+	height: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#food_spots a{
+	font-size: 90%;
+}
+#food_spots p{
+	font-size: 90%;
+}
+#box1{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+#box2{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+#main #O_transportation li{
+	cursor: pointer;
+	border: solid 3px #949494;
+	border-radius: 30px;
+	background: #dfc3ca;
+	color: #F00;
+	padding: 10px 20px 10px;
+}
+#main #O_transportation p{
+	display: none;
+	background-color: #dad4ce;
+	border-radius: 10px;
+}
+#main #O_transportation ul li::after{
+    content: "";
+    position: absolute;
+    top:auto;
+    bottom: auto;
+    right: 14%;
+    display: block;
+    width: .9em;
+    height: .5em;
+    margin: auto;
+    background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
+}
+#O_text_buss{
+	display:inline;
+}
+iframe{
+	padding-bottom: 10px;
+}
+
+/*画面幅1250px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1250px){
+	#O_title_tab li::after{
+		right: 6em;
+	}
+}	
+/*画面幅480px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px)
+{
+	#food_spots img,#hotel img,#souvenir img{
+		height: 100%;
+	}
+	#O_title_tab li::after{
+		right: 4em;
+	}
+}

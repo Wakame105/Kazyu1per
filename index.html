@@ -7,13 +7,14 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
 <!-- ページタグの名前 -->
-<title>チーム制作テンプレート　サイトタイトル</title>
+<title>新しいタブンネ（仮）</title>
 <meta name="" content="サイト説明">
 <meta name="" content="サイト説明">
 
 <!--CSSと繋いでいる部分-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
 
 <!-- 全体 -->
 <body>
@@ -23,25 +24,17 @@
 <header>
     <!-- ロゴ -->
     <h1>
-        <a href="#"><img src="" alt="サイトのテンプレロゴ"></a>
+        <a href="index.html"><img src="" alt="サイトのテンプレロゴ"></a>
     </h1>
 
-    <!-- ヘッダー内の文字 -->
-    <nav class="global-navi">
-        <ul>
-            <li><a href="#special-list"></a></li>
-            <li><a href="#blurs"></a></li><!--サイトについてのメッセージ-->
-            <li><a href="#list-grid"></a></li>
-            <li><a href="#news"></a></li>
-        </ul>
-    </nav>
+    
 </header>
 
 <div id="container"><!--CSSグループのためCSSとの結合時に変更する-->
 
 <!--ページの上部へ戻るボタン-->
 <div class="return" id="returnToTop">
-    <a href="#">  </a>
+    <a href="index.html">  </a>
 </div>
 
 <header><!--ロゴの表示-->
@@ -54,15 +47,15 @@
     <!-- メニューの追加 -->
     <div class="menu-content">
         <ul>
-            <li><a href="#special-list">北海道地方</a></li>
-            <li><a href="#blurs">東北地方</a></li>
-            <li><a href="#list-grid">中部地方</a></li>
-            <li><a href="#news">関東地方</a></li>
-            <li><a href="#kinnki">近畿地方</a></li>
-            <li><a href="#sikoku">四国地方</a></li>
-            <li><a href="#tyuugoku">中国地方</a></li>
-            <li><a href="#kyuusyuu">九州地方</a></li>
-            <li><a href="#okinawa">沖縄地方</a></li>
+            <li><a href="hokkaido.html">北海道地方</a></li>
+            <li><a href="touhoku.html">東北地方</a></li>
+            <li><a href="tyubu.html">中部地方</a></li>
+            <li><a href="kantou.html">関東地方</a></li>
+            <li><a href="kinki.html">近畿地方</a></li>
+            <li><a href="sikoku.html">四国地方</a></li>
+            <li><a href="tyugoku.html">中国地方</a></li>
+            <li><a href="kyusyu.html">九州地方</a></li>
+            <li><a href="okinawa.html">沖縄地方</a></li>
         </ul>
 
         <!-- ソーシャルメディアのアイコン いつか入れる-->
@@ -113,7 +106,7 @@
         let nowDate = new Date();
     </script>
     <dl>
-        <a href="#">情報を更新</a></dt>
+        <a href="index.html">情報を更新</a></dt>
     </dl>
 </section>
 </main>
@@ -130,6 +123,14 @@
 <span></span><span></span><span></span>
 </div>
 
+<!-- JavaScript 関連はこれ以降に -->
+<script src="./Js/jquery.min.js"></script>
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyC8JH3nnbHjZ-lRnlUpq93rWnV2UWUbi0o", v: "beta"});</script>
 
+<noscript>
+  <h2>JavaScriptが向こう水です。</h2>
+  <p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+</noscript>
 </body>
 </html>

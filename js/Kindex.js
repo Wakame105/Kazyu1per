@@ -26,18 +26,18 @@ tab2.on('click',function(){
 $(function(){
     let json = "./assets/json/KOutput.json";
     $.getJSON(json,function(data){
-        tab.append(data.Fst.title);
-        obj.append('<a href=' + data.Fst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
-             data.Fst.content1 + data.Fst.content2 +
-             data.Fst.content3 + data.Fst.content4 +
-             data.Fst.content5 + data.Fst.content6 +
-            data.Fst.content7 )
-        tab2.append(data.Snd.title);
-        obj2.append('<a href=' + data.Snd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
-             data.Snd.content1 + data.Snd.content2 +
-             data.Snd.content3 + data.Snd.content4 +
-             data.Snd.content5 + data.Snd.content6 +
-            data.Snd.content7 
+        tab.append(data.TPFst.title);
+        obj.append('<a href=' + data.TPFst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
+             data.TPFst.content1 + data.TPFst.content2 +
+             data.TPFst.content3 + data.TPFst.content4 +
+             data.TPFst.content5 + data.TPFst.content6 +
+            data.TPFst.content7 )
+        tab2.append(data.TPSnd.title);
+        obj2.append('<a href=' + data.TPSnd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
+             data.TPSnd.content1 + data.TPSnd.content2 +
+             data.TPSnd.content3 + data.TPSnd.content4 +
+             data.TPSnd.content5 + data.TPSnd.content6 +
+            data.TPSnd.content7 
         );
     });
 });

@@ -2,25 +2,30 @@
 
 /*段落(p)タグ*/
 #main p {
+	text-align: center;
 	padding: 10px 20px 15px;	/*上、左右、下への余白*/
 }
 #main a{
+	text-align: center;
 	padding: 0 20px 0px;
+	text-decoration: none;
 }
 
 /* --------------------ここから新しく追加した分 --------------*/
+h4{
+	font-weight: bold;
+}
 #main .photo-block a{
 	padding: 0;
 }
-#food_spots,#hotel,#souvenir{
+#food_spots,#hotel,#souvenir,#sightseeing_spots{
 	display: flex;
 	justify-content: space-around;
 }
-#food_spots img,#hotel img,#souvenir img{
+#food_spots img,#hotel img,#souvenir img,#sightseeing_spots img{
 	width: auto;
 	height: 200px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 10px;
 }
 #food_spots a{
 	font-size: 90%;
@@ -34,6 +39,9 @@
 	display: grid;
 	justify-content: center;
 }
+a:hover{
+	background-color: rgb(218, 208, 225);
+}
 #box2{
 	padding: 5px;
 	width: 50%;
@@ -44,14 +52,32 @@
 	cursor: pointer;
 	border: solid 3px #949494;
 	border-radius: 30px;
-	background: #dfc3ca;
-	color: #F00;
 	padding: 10px 20px 10px;
+}
+#main #O_transportation #O_text_title_KM{
+	color: rgb(214, 22, 22);
+	background-color: #d7c7d7;
+}
+#main #O_transportation #O_text_title_KM:hover{
+	background-color: #eeafee;
+}
+#main #O_transportation #O_text_title_GP{
+	color: rgb(1, 136, 181);
+	background-color: #dadbcc;
+}
+#main #O_transportation #O_text_title_GP:hover{
+	background-color: #bcbc51;
 }
 #main #O_transportation p{
 	display: none;
 	background-color: #dad4ce;
 	border-radius: 10px;
+}
+#main #O_transportation a{
+	text-decoration: underline red;
+}
+#main #O_transportation ul{
+	padding: 5px;
 }
 #main #O_transportation ul li::after{
     content: "";
@@ -82,6 +108,7 @@ iframe{
     height: 5px;
     background-color: #000;
 }
+
 
 /*画面幅1250px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/

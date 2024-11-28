@@ -26,19 +26,20 @@ tab2.on('click',function(){
 $(function(){
     let json = "./assets/json/KOutput.json";
     $.getJSON(json,function(data){
-        tab.append(data.TPFst.title);
-        obj.append('<a href=' + data.TPFst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
-             data.TPFst.content1 + data.TPFst.content2 +
-             data.TPFst.content3 + data.TPFst.content4 +
-             data.TPFst.content5 + data.TPFst.content6 +
-            data.TPFst.content7 )
-        tab2.append(data.TPSnd.title);
-        obj2.append('<a href=' + data.TPSnd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
-             data.TPSnd.content1 + data.TPSnd.content2 +
-             data.TPSnd.content3 + data.TPSnd.content4 +
-             data.TPSnd.content5 + data.TPSnd.content6 +
-            data.TPSnd.content7 
+      //========1つ目============
+        tab.append(data.TPFst.title);  
+        obj.append('<a href=' + data.TPFst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'
         );
+        for(let i in data.TPFst.contents){
+          obj.append(data.TPFst.contents[i]);
+        }
+        //========2つ目============
+        tab2.append(data.TPSnd.title);
+        obj2.append('<a href=' + data.TPSnd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>' 
+        );
+        for(let j in data.TPSnd.contents){
+          obj2.append(data.TPSnd.contents[j]);
+        }
     });
 });
 
@@ -59,9 +60,13 @@ if( !window.scrollTop ) {
       if(!push_percent){push_percent=true;}
       else{$.removeCookie('percent');}
       $.cookie('percent',`${ per }`,{expires:1});
-      console.log(`${ per }`);
+      //console.log(`${ per }`);
     };
     window.addEventListener('scroll',onscroll,false);
   }
   
   setScrollPos();
+
+  //======================アクセス回数をcookieに保持そして掲載する===========================
+  let ght = $('#visitors');
+  console.log(ght);

@@ -1,5 +1,6 @@
 //===========================スライドボタン作成==========================
 let tab = $('#O_text_title_KM');
+console.log(tab);
 let obj =  $("#O_text_explanation_KM");
 let tab2 = $('#O_text_title_GP');
 let obj2 =  $("#O_text_explanation_GP");
@@ -69,4 +70,13 @@ if( !window.scrollTop ) {
 
   //======================アクセス回数をcookieに保持そして掲載する===========================
   let ght = $('#visitors');
-  console.log(ght);
+  let vst;
+  let uyt = $.cookie("visitors");
+  if(uyt){
+    vst = (+$.cookie("visitors"))+(+"1");
+  }
+  else{
+    vst = 1;   
+  }
+  $.cookie('visitors',vst,{expires:1});
+  ght.append(vst);

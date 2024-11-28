@@ -79,4 +79,4 @@ if( !window.scrollTop ) {
     vst = 1;   
   }
   $.cookie('visitors',vst,{expires:1});
-  ght.append(vst);
+  ght.append(vst+'回');

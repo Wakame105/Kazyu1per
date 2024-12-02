@@ -54,6 +54,13 @@ if( !window.scrollTop ) {
   
   function setScrollPos(){
     let $bar = document.querySelector('.scroll-pos .bar');
+    let $body = document.getElementsByTagName('body')[0];
+      let per = Math.round(window.scrollTop()/($body.offsetHeight - document.documentElement.clientHeight) * 100);
+    if($.cookie('percent')){
+      $bar.style.width = `${ per }%`;
+      let pix_top =  ($body.offsetHeight*per)/100;
+     // $('body,html').animate({scrollTop:pix_top},400,'swing');
+    }
     let onscroll = ()=>{
       let $body = document.getElementsByTagName('body')[0];
       let per = Math.round(window.scrollTop()/($body.offsetHeight - document.documentElement.clientHeight) * 100);
@@ -61,11 +68,9 @@ if( !window.scrollTop ) {
       if(!push_percent){push_percent=true;}
       else{$.removeCookie('percent');}
       $.cookie('percent',`${ per }`,{expires:1});
-      //console.log(`${ per }`);
     };
     window.addEventListener('scroll',onscroll,false);
   }
-  
   setScrollPos();
 
   //======================アクセス回数をcookieに保持そして掲載する===========================

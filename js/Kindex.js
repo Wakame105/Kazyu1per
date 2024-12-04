@@ -1,9 +1,9 @@
 //===========================スライドボタン作成==========================
 let tab = $('#O_text_title_KM');
-console.log(tab);
 let obj =  $("#O_text_explanation_KM");
 let tab2 = $('#O_text_title_GP');
 let obj2 =  $("#O_text_explanation_GP");
+let lb_PH = $(".lb-tag_a");
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
     // {

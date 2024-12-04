@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/Ksanitize.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/Kstyle.css">
+<!-- <link rel="stylesheet" href="css/lightbox.css"> -->
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
@@ -30,7 +31,7 @@
 	<div class="scroll-pos">
 		<div class="bar"></div>
 	</div>
-	<h2 id="visitors">24時間以内の総来場回数:</h2>
+	<h2 id="visitors">24時間以内の総来場回数(個人):</h2>
 <h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
 <aside id="mainimg">
 <img src="assets/images/oita/PH_01.png" alt="">
@@ -57,20 +58,20 @@
 		</div>
 		
 		<div class="list">
-		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="油谷熊八の像">
-		<figure><img src="assets/images/oita/P_02_mini.png" alt="油谷熊八の像"></figure>
+		<a href="assets/images/oita/P_09.jpg" data-lightbox="group1" data-title="坊主地獄の坊主 撮影:" data-satu="annintofu氏" data-satuurl="https://flic.kr/p/qWhpiG">
+		<figure><img src="assets/images/oita/P_09_mini.png" alt="坊主地獄の坊主"></figure>
 		</a>
 		</div>
 		
 		<div class="list">
-		<a href="assets/images/oita/P_03.jpg" data-lightbox="group1" data-title="sunrise">
-		<figure><img src="assets/images/oita/P_01_mini.png" alt="sunrise"></figure>
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="sunrise">
+		<figure><img src="assets/images/oita/P_02_mini.png" alt="朝焼け"></figure>
 		</a>
 		</div>
 		
 		<div class="list">
-		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="八重桜">
-		<figure><img src="assets/images/oita/P_01_mini.png" alt="八重桜"></figure>
+		<a href="assets/images/oita/P_03.jpg" data-lightbox="group1" data-title="八重桜">
+		<figure><img src="assets/images/oita/P_03_mini.png" alt="八重桜"></figure>
 		</a>
 		</div>
 		
@@ -324,7 +325,8 @@ if (OCwindowWidth() <= 800) {
 </script>
 
 <!--lightbox用jsファイルの読み込み-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<!--動作がおかしくなった時の緊急用<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script> -->
+<script src="./js/lightbox-plus-jquery.min.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})

@@ -1,8 +1,8 @@
 'use stript';
-let tab = $('#O_text_title');
-let obj =  $("#O_text_explanation");
-let tab2 = $('#O_text_title2');
-let obj2 =  $("#O_text_explanation2");
+let tab = $('#O_text_title_KM');
+let obj =  $("#O_text_explanation_KM");
+let tab2 = $('#O_text_title_GP');
+let obj2 =  $("#O_text_explanation_GP");
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
     // {
@@ -26,13 +26,20 @@ tab2.on('click',function(){
 $(function(){
     let json = "./assets/json/KOutput.json";
     $.getJSON(json,function(data){
-        for(let i in data){
-            tab2.append(data[i].title);
-            obj2.append('<a href=' + data[i].url + ' target="_blank"> URLはこちらから </a><br>'+
-                data[i].content1 + data[i].content2 +
-                data[i].content3 + data[i].content4 +
-                data[i].content5 + data[i].content6   
-            );
-        }
+        tab.append(data.Fst.title);
+        obj.append('<a href=' + data.Fst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
+             data.Fst.content1 + data.Fst.content2 +
+             data.Fst.content3 + data.Fst.content4 +
+             data.Fst.content5 + data.Fst.content6 +
+            data.Fst.content7 )
+        tab2.append(data.Snd.title);
+        obj2.append('<a href=' + data.Snd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'+
+             data.Snd.content1 + data.Snd.content2 +
+             data.Snd.content3 + data.Snd.content4 +
+             data.Snd.content5 + data.Snd.content6 +
+            data.Snd.content7 
+        );
     });
 });
+
+

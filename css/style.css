@@ -19,7 +19,7 @@ body {
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: #fff url(../images/bg1.jpg);	/*背景色、背景画像の読み込み*/
+	background: #fff url(../assets/images/bg1.jpg);	/*背景色、背景画像の読み込み*/
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
@@ -85,8 +85,8 @@ header #logo {
 	clear: both;
 	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
 	color: #fff;			/*文字色*/
-	background: #7e7258 url(../images/arrow1.png) no-repeat left center;	/*背景色と背景画像（古いブラウザ用）*/
-	background: url(../images/arrow1.png) no-repeat left center, linear-gradient(#b2a17c, #9a8b6b 49%, #7e7258 50%);	/*背景画像の読み込み、グラデーション*/
+	background: #7e7258 url(../assets/images/arrow1.png) no-repeat left center;	/*背景色と背景画像（古いブラウザ用）*/
+	background: url(../assets/images/arrow1.png) no-repeat left center, linear-gradient(#b2a17c, #9a8b6b 49%, #7e7258 50%);	/*背景画像の読み込み、グラデーション*/
 	border-radius: 30px;	/*角丸のサイズ*/
 	padding: 10px 20px 10px 50px;	/*上、右、下、左への見出し内の余白*/
 }
@@ -139,6 +139,20 @@ header #logo {
 	border-radius: 50%;
 }
 
+.kankou-slider {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.list-menu {
+	margin: 10px;
+	padding: 15px;
+	font-size: 1.1em;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
 /*subブロック
 ---------------------------------------------------------------------------*/
 #sub {
@@ -402,11 +416,11 @@ p.check a {color: #fff;}
 }
 /*三本バーアイコン*/
 #menubar_hdr.close {
-	background: #7e7258 url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+	background: #7e7258 url(../assets/images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
 }
 /*閉じるアイコン*/
 #menubar_hdr.open {
-	background: #7e7258 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
+	background: #7e7258 url(../assets/images/icon_menu.png) no-repeat center bottom/50px;	/*背景色背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
 }
 
 /*main,subブロック

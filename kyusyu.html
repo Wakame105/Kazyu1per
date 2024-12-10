@@ -10,6 +10,15 @@
 <link rel="stylesheet" href="css/Kstyle.css">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Kstyle.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -21,9 +30,9 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
 <aside id="mainimg">
-<img src="images/2.jpg" alt="">
+<img src="assets/images/oita/PH_01.png" alt="">
 </aside>
 </header>
 
@@ -38,50 +47,75 @@
 
 	<h3>写真</h3>
 
-	<div class="list">
-		<a href="images/oita/P_01.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images/oita/P_01.jpg" alt="大分の写真"></figure>
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="黄色のバラの花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="坊主地獄"></figure>
 		</a>
-	</div>
-
-	<div class="list">
-		<a href="images/oita/P_02.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images/oita/P_02.jpg" alt="大分の写真"></figure>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="藤の花">
+		<figure><img src="assets/images/oita/P_02_mini.png" alt="油谷熊八の像"></figure>
 		</a>
-	</div>
-
-	<div class="list">
-		<a href="images/oita/P_00.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images/oita/P_00.jpg" alt="大分の写真"></figure>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_03.jpg" data-lightbox="group1" data-title="蓮の葉">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="蓮の葉"></figure>
 		</a>
-	</div>
-
-	<div class="list">
-		<a href="images/oita/P_00.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images/oita/P_00.jpg" alt="大分の写真花"></figure>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="八重桜">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="八重桜"></figure>
 		</a>
-	</div>
-
-	<div class="list">
-		<a href="images_photo/7.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images_photo/7_mini.jpg" alt="大分の写真"></figure>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="白いバラ">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="白いバラ"></figure>
 		</a>
-	</div>
-
-	<div class="list">
-		<a href="images_photo/8.jpg" data-lightbox="group1" data-title="大分の写真">
-		<figure><img src="images_photo/8_mini.jpg" alt="大分の写真"></figure>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="蓮の花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="蓮の花"></figure>
 		</a>
-	</div>
-
-
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="バラの花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="バラの花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="四つ葉のクローバー">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="四つ葉のクローバー"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
 	<h3>地図</h3>
 	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19551.305307531653!2d131.4692334563445!3d33.30982418939008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a7b960bca539%3A0x8bdccd2d35d910f2!2z44G544Gj44G35Zyw542E44KB44GQ44KK!5e1!3m2!1sja!2sjp!4v1728265106199!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d789484.2558450999!2d130.812205741997!3d33.17408010491026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35445c95e3d84793%3A0x3f17b7f27036bee2!2z5aSn5YiG55yM!5e1!3m2!1sja!2sjp!4v1731561285830!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	<h3>飲食店</h3>
 	<div id="food_spots">
-		<p>マックスバリュー及びKOHYO及びフジ</p>
-		<a href="https://stores.marugame.com/110618?utm_source=google_serps&utm_medium=gmb&utm_campaign=gbpwebs" target="_blank">丸亀製麺別府店</a>
+		<div id="box1"> 
+			<img src="assets/images/oita/P_04.webp" alt="東洋軒">
+			<a href="https://www.toyoken-beppu.co.jp/about/" target="_blank">
+				レストラン東洋軒
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/P_01.jpg" alt="丸亀の写真">
+			<a href="https://stores.marugame.com/110618?utm_source=google_serps&utm_medium=gmb&utm_campaign=gbpwebs" target="_blank">
+				丸亀製麺別府店
+			</a>
+		</div>
 	</div>
 	<h3>観光スポット</h3>
 	<div id="sightseeing_spots">
@@ -89,17 +123,54 @@
 	</div>
 	<h3>ホテル</h3>
 	<div id="hotel">
-		<a href="https://www.ferry-sunflower.co.jp/" target="_blank">さんふらわあ　むらさき・くれない・ごーるど・ぱーる</a>
-		<p>温泉旅館か東横イン</p>
+		<div id="box1">
+			<img src="assets/images/oita/PS_01.jpg" alt="なにかの写真">
+			<a href="https://www.ferry-sunflower.co.jp/" target="_blank">
+				さんふらわあ　むらさき・くれない・ごーるど・ぱーる
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/P_01.jpg" alt="なにかの写真">
+			<p id="text_hotel2">温泉旅館か東横イン</p>
+		</div>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
-		<a href="https://www.ferry-sunflower.co.jp/">さんふらわあ　むらさき・くれない・ごーるど・ぱーる</a>
-		<p>車かヒッチハイクか高速バス</p>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title">
+				編集者おヌヌメ！！！<br>
+				さんふらわあ　くれない・むらさきで0泊2日!往復１万５千円<br>
+				(電話予約&現金のみ&相部屋利用) 出発
+			</li>
+		</ul>
+		<p id="O_text_explanation">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
+			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
+			19:00神戸港を出発→お風呂入ったりして船旅(食料を持ち込むのが安く済むゾ)。<br>
+			翌日土曜日07:20大分港に到着。自由行動。<br>
+			18:30には乗船手付きをしておき、19:30大分港発。<br>
+			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title2">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation2">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
 	</div>
 	<h3>お土産</h3>
-	<div id="omiya">
-		<p>明石焼き・佐世保バーガー・東京カンパネラ</p>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/oita/P_01.jpg" alt="お土産の写真">
+			<p>明石焼き・佐世保バーガー・東京カンパネラ</p>
+		</div>
+		<div id="box2">
+			<img src="assets/images/oita/P_01.jpg" alt="お土産の写真">
+			<a href="http://www.yamabukiiro.com/" target="_blank">山吹色のお菓子</a>
+		</div>
+
 	</div>
 
 </div><!--/.Oita-block-->
@@ -110,38 +181,38 @@
 	<h3>写真</h3>
 
 	<div class="list">
-		<a href="images/oita/P_01.jpg" data-lightbox="group1" data-title="サンプルテキストサ鹿児島ンプルテキストサンプルテキストの写真">
-		<figure><img src="images/oita/P_01.jpg" alt="鹿児島の写真"></figure>
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="サンプルテキストサ鹿児島ンプルテキストサンプルテキストの写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images/oita/P_02.jpg" data-lightbox="group1" data-title="鹿児島の写真">
-		<figure><img src="images/oita/P_02.jpg" alt="鹿児島の写真"></figure>
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
-		<figure><img src="images/oita/P_00.jpg" alt="鹿児島の写真"></figure>
+		<a href="assets/images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
-		<figure><img src="images/oita/P_00.jpg" alt="鹿児島の写真花"></figure>
+		<a href="assets/images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真花"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images_photo/7.jpg" data-lightbox="group1" data-title="鹿児島の写真">
-		<figure><img src="images_photo/7_mini.jpg" alt="鹿児島の写真"></figure>
+		<a href="assets/images_photo/7.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
 		</a>
 	</div>
 
 	<div class="list">
-		<a href="images_photo/8.jpg" data-lightbox="group1" data-title="鹿児島の写真">
-		<figure><img src="images_photo/8_mini.jpg" alt="鹿児島の写真"></figure>
+		<a href="assets/images_photo/8.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
 		</a>
 	</div>
 
@@ -164,49 +235,17 @@
 		<p>温泉旅館か東横イン</p>
 	</div>
 	<h3>交通手段</h3>
-	<div id="how_moving">
+	<div id="transportation">
 		<p>さんふらわあ　さつま・きりしま</p>
 		<p>車かヒッチハイクか高速バス</p>
 	</div>
 	<h3>お土産</h3>
-	<div id="omiya">
+	<div id="souvenir">
 		<p>明石焼き・佐世保バーガー・志布志バーガー・東京カンパネラ</p>
 	</div>
 
 </div><!--/.Kagoshima-block-->
 
-<h3>lightboxの使い方</h3>
-<p>当テンプレートでは、<a href="https://cdnjs.com/libraries/lightbox2" target="_blank">lightbox2</a>というjavascriptライブラリを使用しています。<br>
-※ポップアップウィンドウ以降の動作はlightboxの仕様です。弊社ではサポートしておりませんので予めご了承下さい。</p>
-<p class="clear">サムネイル用の写真サイズはある程度大きければ適当で構いませんが、必ず「正方形」で準備して下さい。1pxでも縦横がずれると段落ちする場合があります。<br>
-ポップアップ用の大きな画像は自由サイズでOKです。</p>
-<p><strong class="color1">■画像を増やしたい場合</strong><br>
-基本的にはご利用のテンプレートのhtml側のパーツをコピペして増やしてみて下さい。<br>
-以下の例のように大画像はaタグ内で読み込み、小画像はimgタグで普通に読み込まれています。</p>
-<p>&lt;a href=&quot;images_photo/3.jpg&quot; data-lightbox=&quot;group1&quot; data-title=&quot;タイトル&quot;&gt;<br>
-&lt;figure&gt;&lt;img src=&quot;images_photo/3s.jpg&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;<br>
-&lt;/a&gt;</p>
-<p><strong class="color1">■注意</strong><br>
-拡張子が大文字だったり小文字だったり（「jpg」「JPG」）、異なっていたり（「jpg」「jpeg」）するとうまく動作しない場合があるので、実際の画像ファイル名とhtml側の表記を揃えておいて下さい。<br>
-異なるままにしておいた場合、あなたの環境で正常に見えていても、他の人の環境で画像が表示されないなど問題が出る可能性があります。</p>
-<p><strong class="color1">■タグの説明</strong><br>
-<span class="color1">data-lightbox="group1"</span>は、ポップアップで表示した場合に次の画像へリンクでつないていくかの設定です。「group1」部分は好きに変更して頂いて構いませんが、ここを同じ名前で揃えておけば、画像の右半分にカーソルをのせた時に次の画像へのリンク用のアイコンが出ます。<br>
-<span class="color1">data-title="タイトル"</span>は、lightboxで暗転表示された際に写真下に表示されるテキストです。<br>
-よく分からない場合は実際に設定して動作を確認してみて下さい。</p>
-<p><strong class="color1">■別のページでlightboxを使う場合</strong><br>
-htmlの下の方に、<br>
-<span class="look">&lt;!--lightbox用jsファイルの読み込み--&gt;<br>
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js&quot;&gt;&lt;/script&gt;</span><br>
-のタグを追加して下さい。</p>
-<p><strong class="color1">■lightbox未搭載のテンプレートでlightboxを使いたい場合</strong><br>
-htmlの下の方に、<br>
-<span class="look">&lt;!--lightbox用jsファイルの読み込み--&gt;<br>
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js&quot;&gt;&lt;/script&gt;</span><br>
-のタグを追加。<br>
-続いてcssフォルダのstyle.css冒頭に、<br>
-<span class="look">@import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);</span><br>
-のタグを追加。これで準備は完了です。<br>
-あとは上に書いたようなlightbox専用のタグを使って作り込んでみて下さい。</p>
 
 </section>
 
@@ -226,10 +265,6 @@ htmlの下の方に、<br>
 </ul>
 </nav>
 
-<p><a href="#"><img src="images/banner1.jpg" alt="採用情報" class="pc"></a>
-<a href="#"><img src="images/banner1_sh.jpg" alt="採用情報" class="sh"></a></p>
-<p>上のバナー画像は、801px以上の端末と800px以下とで画像２種類が切り替わります。<br>
-<a href="about.html#banner">詳しい説明はこちら。</a></p>
 
 </div>
 <!--/#sub-->
@@ -256,7 +291,7 @@ htmlの下の方に、<br>
 </nav>
 
 <!--ページの上部に戻る「↑」ボタン-->
-<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+<p class="nav-fix-pos-pagetop"><a href="kyusyu.html">↑</a></p>
 
 <!--メニュー開閉ボタン-->
 <div id="menubar_hdr" class="close"></div>
@@ -269,6 +304,11 @@ if (OCwindowWidth() <= 800) {
 
 <!--lightbox用jsファイルの読み込み-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
-
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
 </body>
 </html>

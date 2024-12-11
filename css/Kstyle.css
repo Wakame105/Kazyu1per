@@ -52,38 +52,38 @@ a:hover{
 	display: grid;
 	justify-content: center;
 }
-#main #O_transportation li{
+#main .transport li{
 	cursor: pointer;
 	border: solid 3px #949494;
 	border-radius: 30px;
 	padding: 10px 20px 10px;
 }
-#main #O_transportation #O_text_title_KM{
+#main .transport .text_title_KM{
 	color: rgb(214, 22, 22);
 	background-color: #d7c7d7;
 }
-#main #O_transportation #O_text_title_KM:hover{
+#main .transport .text_title_KM:hover{
 	background-color: #eeafee;
 }
-#main #O_transportation #O_text_title_GP{
+#main .transport .text_title_GP{
 	color: rgb(1, 136, 181);
 	background-color: #dadbcc;
 }
-#main #O_transportation #O_text_title_GP:hover{
+#main .transport .text_title_GP:hover{
 	background-color: #bcbc51;
 }
-#main #O_transportation p{
+#main .transport p{
 	display: none;
 	background-color: #dad4ce;
 	border-radius: 10px;
 }
-#main #O_transportation a{
+#main .transport a{
 	text-decoration: underline red;
 }
-#main #O_transportation ul{
+#main .transport ul{
 	padding: 5px;
 }
-#main #O_transportation ul li::after{
+#main .transport ul li::after{
     content: "";
     position: absolute;
     top:auto;
@@ -94,9 +94,6 @@ a:hover{
     height: .5em;
     margin: auto;
     background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
-}
-#O_text_buss{
-	display:inline;
 }
 iframe{
 	padding-bottom: 10px;
@@ -129,6 +126,9 @@ iframe{
 	#O_title_tab li::after{
 		right: 6em;
 	}
+	#M_title_tab li::after{
+		right: 6em;
+	}
 	.scroll-pos {
 		width: 83%;
 	}
@@ -141,6 +141,9 @@ iframe{
 		height: 100%;
 	}
 	#O_title_tab li::after{
+		right: 4em;
+	}
+	#M_title_tab li::after{
 		right: 4em;
 	}
 }

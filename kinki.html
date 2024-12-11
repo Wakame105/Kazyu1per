@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>kinki_travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="近畿地方の個人的観光情報を書いています。">
+<meta name="keywords" content="近畿,旅行,">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/KKstyle.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="assets/images/oita/PH_01.png" alt="">
+</aside>
+</header>
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+
+<div class="Kyoto-block">
+	<h2>京都府</h2>
+
+	<h3>写真</h3>
+
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto1.webp" data-lightbox="group1" data-title="千本鳥居">
+		<figure><img src="assets/images/kyoto/k_mini1.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto2.webp" data-lightbox="group1" data-title="千本鳥居(夜)">
+		<figure><img src="assets/images/kyoto/k_mini2.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto3.jpg" data-lightbox="group1" data-title="伏見稲荷大社">
+		<figure><img src="assets/images/kyoto/k_mini3.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto4.webp" data-lightbox="group1" data-title="清水寺">
+		<figure><img src="assets/images/kyoto/k_mini4.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto5.webp" data-lightbox="group1" data-title="金閣時">
+		<figure><img src="assets/images/kyoto/k_mini5.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto6.webp" data-lightbox="group1" data-title="三十三間堂">
+		<figure><img src="assets/images/kyoto/k_mini6.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto7.webp" data-lightbox="group1" data-title="京都国立博物館">
+		<figure><img src="assets/images/kyoto/k_mini7.png"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kyoto/kyoto8.webp" data-lightbox="group1" data-title="寺田屋">
+		<figure><img src="assets/images/kyoto/k_mini8.png"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
+	<h3>地図</h3>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.557636328791!2d135.7791876!3d34.96769449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f153d2e6d21%3A0x7b1aca1c753ae2e9!2z5LyP6KaL56iy6I235aSn56S-!5e0!3m2!1sja!2sjp!4v1732152382521!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<h3>飲食店</h3>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/kyoto/nezameya.jpg" alt="祢ざめ家">
+			<a href="http://nezameya.com/" target="_blank">
+				祢ざめ家
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/kyoto/sourire.jpg" alt="洋食屋スゥリールの写真">
+			<a href="https://tabelog.com/kyoto/A2601/A260601/26037923/" target="_blank">
+				洋食屋スゥリール
+			</a>
+		</div>
+	</div>
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<a href="https://inari.jp/" target="_blank">
+			伏見稲荷大社
+		</a>
+	</div>
+	<h3>ホテル</h3>
+	<div id="hotel">
+		<div id="box1">
+			<a href="https://www.trivago.jp/ja/srl?themeId=453&search=500-851181&sem_keyword=%E4%BC%8F%E8%A6%8B%E7%A8%B2%E8%8D%B7%E5%A4%A7%E7%A4%BE%20%E3%83%9B%E3%83%86%E3%83%AB&sem_creativeid=715084483850&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=&sem_param1=&sem_param2=&sem_campaignid=934340280&sem_adgroupid=48375040753&sem_targetid=aud-1898770347031:kwd-305533465134&sem_location=9198555&cipc=sem&cip=8119000567&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoDi1NY9S8Ar6rUa9i4nvL2R0rVklscMgj-iznrd3r954PMAqwb2GdxoCjyMQAvD_BwE" target="_blank">
+				ホテル比較サイトリンク
+			</a>
+		</div>
+		<div id="box2"> 
+			<p id="text_hotel2">値段が時期により異なるので、比較サイトを見て５～６千円前後を予算に決めてください。</p>
+		</div>
+	</div>
+	<h3>交通手段</h3>
+	<div id="O_transportation">
+		
+		<p>選択肢1.所要時間30分 JR在来線 大阪駅～京都駅 580円</p>
+		<p>選択肢2.阪急（在来線）約43分（梅田駅～京都河原町駅）410円</p>
+	
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/kyoto/hogyokudo.jpg" alt="お土産の写真">
+			<a href="https://inari-kyoto.com/hogyokudo" target="_blank">総本家 宝玉堂</a>
+		</div>
+		<div id="box2">
+			<img src="assets/images/kyoto/g_kacco.jpg" alt="お土産の写真">
+			<a href="https://g-kacco.com/" target="_blank">GALLERY KACCO</a>
+		</div>
+
+	</div>
+
+</div><!--/.Oita-block-->
+
+
+
+
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="kyusyu.html">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
+</body>
+</html>

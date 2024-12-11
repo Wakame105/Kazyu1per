@@ -102,7 +102,28 @@ header #logo {
 	
 }
 /*h3タグ*/
+#image-carousel .kankou-slider {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+}
 
+.list-menu:hover img {
+	transform: scale(1.1);
+    width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    #image-carousel .kankou-slider {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
 
 /*段落(p)タグ*/
 #main p {
@@ -606,6 +627,39 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 	border-radius: 30px;	/*角丸のサイズ*/
 	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
 	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+
+/* スライダー全体のスタイル */
+.slider {
+    display:flex;
+    overflow:scroll;
+}
+
+/* スライド内のアイテム */
+.kankou-slider .list-menu {
+    text-align: center;
+    padding: 10px;
+}
+
+/* 画像スタイル */
+.kankou-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 角を丸める例 */
+}
+
+/* h4 のスタイル */
+.kankou-slider h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* p のスタイル */
+.kankou-slider p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
 }
 /* .btn::before {
 	background: linear-gradient(135deg, #6fa24a, #15a1cc);

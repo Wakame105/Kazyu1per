@@ -1,20 +1,386 @@
-<!-- サイトの詳細設定 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-
-<!-- ページタグの名前 -->
-<title>新しいタブンネ（仮）</title>
-<meta name="" content="サイト説明">
-<meta name="" content="サイト説明">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>kyusyu_travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="東北地方の個人的観光情報を書いています。">
+<meta name="keywords" content="東北,旅行,">
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Tstyle.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
 
-<header></header>
-    <h1>
-        <!-- <div class="header-h1-img-wrap"></div> -->
-        <a href="#"><img alt="東北地方"></a>
-    </h1>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="assets/images/oita/PH_01.png" alt="">
+</aside>
 </header>
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+
+
+<div class="Oita-block">
+	<h2>宮城県</h2>
+	<h3><font color="red">宮城県の魅力</font></h3>
+	<p>
+		宮城県では明治12年より前まで<font color=#a910c4><ruby>陸奥国<rt>むつのくに</rt></ruby></font>と呼ばれていました。<br>陸奥国を中心に発展していき
+		今の仙台があります。<br>なので宮城県では仙台市に多くの観光スポットがあります。
+	</p>
+	<h2>写真</h2>
+
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="黄色のバラの花">
+		<figure><img src="assets/images/oita/sakura.png" alt="坊主地獄"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="藤の花">
+		<figure><img src="assets/images/oita/masamune.png" alt="伊達政宗の像"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_03.jpg" data-lightbox="group1" data-title="蓮の葉">
+		<figure><img src="assets/images/oita/suizokukan.png" alt="蓮の葉"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="八重桜">
+		<figure><img src="assets/images/oita/syopingu.png" alt="八重桜"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="白いバラ">
+		<figure><img src="assets/images/oita/ki.png" alt="白いバラ"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="蓮の花">
+		<figure><img src="assets/images/oita/kouyou.png" alt="蓮の花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="バラの花">
+		<figure><img src="assets/images/oita/うみ.png" alt="バラの花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="四つ葉のクローバー">
+		<figure><img src="assets/images/oita/onsen.png" alt="四つ葉のクローバー"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
+	<h2>地図</h2>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400704.8807085193!2d140.43918660588406!3d38.31409140412156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a2aee30cd55d3%3A0xba2579e0b846b1ee!2z5a6u5Z-O55yM5LuZ5Y-w5biC!5e0!3m2!1sja!2sjp!4v1732582447350!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<h2>飲食店</h2>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/oita/kaki.webp" alt="松島さかな市場">
+			<p>【所在地】
+			宮城県宮城郡松島町松島字普賢堂4-10<br>
+
+			【営業時間】
+			8:00～17:00（食事受付 1階8:00～15:00、2階10:00～15:00）<br>
+
+			【定休日】
+			年中無休<br>
+
+			【アクセス情報】
+			JR仙石線松島海岸駅より徒歩約10分
+			三陸自動車道「松島海岸IC」より車で約15分<br>
+			</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1564.001263231434!2d141.064108!3d38.372063000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f899b9f26de2043%3A0x94564c7b8584679!2z5p2-5bO244GV44GL44Gq5biC5aC0!5e0!3m2!1sja!2sjp!4v1732581811289!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<a href="https://www.sakana-ichiba.co.jp/" target="_blank">
+				松島さかな市場
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/ちゃーはん.jpg" alt="丸亀の写真">
+			<p>【所在地】
+				宮城県仙台市青葉区柏木１丁目９−３３<br>
+	
+				【営業時間】
+				 11:00~13:45 17:00~18:45（日曜日は午前中のみ）<br>
+	
+				【定休日】
+				月曜日<br>
+	
+				【アクセス情報】
+				仙台市営地下鉄南北線/北四番丁駅 徒歩14分（1.1km）
+				仙台市営地下鉄南北線/北仙台駅 徒歩16分（1.2km）
+				JR仙山線/北山（宮城）駅 徒歩18分（1.4km）</br>
+			</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.162496922369!2d140.8566402759071!3d38.275725871863415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a29d14894212f%3A0x12181d0068a05df!2z5LmF576O6aOf5aCC!5e0!3m2!1sja!2sjp!4v1732584661851!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<a href="https://stores.marugame.com/110618?utm_source=google_serps&utm_medium=gmb&utm_campaign=gbpwebs" target="_blank">
+				
+			</a>
+		</div>
+	</div>
+	<h2>観光スポット</h2>
+	<div id="sightseeing_spots">
+		<div class="kankou-slider">
+			<div id="l1" class="list-menu">
+				<img src="assets/images/oita/sakura.png" alt="志波彦神社">
+				<h4>志波彦神社</h4>
+				<p>志波彦神社(しわひこじんじゃ)は商売繁盛、安産守護、海上安全、大漁祈願があり、春になるとしだれ桜で満開となります。</p>
+			</div>
+
+			<div id="l2" class="list-menu">
+				<img src="assets/images/oita/masamune.jpg" alt="志波彦神社">
+				<h4>伊達政宗公騎馬像</h4>
+				<p>伊達政宗公が築城した仙台城（青葉城）の跡地。自然の地形を生かした「天然の要塞」と称されました。</p>
+			</div>
+
+		</div>
+		
+		
+	</div>
+	<h2>ホテル</h2>
+	<div id="hotel">
+		<div id="box1">
+			<img src="assets/images/oita/仙台ホテル.jpg" alt="なにかの写真">
+			<a href="https://dormy-hotels.com/dormyinn/hotels/sendaiekimae/" target="_blank">
+				ドーミーイン　仙台駅前　温泉
+			</a>
+			<p>
+				天然の萩の湯があるホテルで全国にあるドーミーイン系列なので
+				誰でも快適に過ごせます。
+			</p>
+			<p>【所在地】
+				宮城県 仙台市青葉区本町1-5-38<br>
+	
+				【アクセス情報】
+				仙台市営地下鉄南北線/「広瀬通駅」東1出口から徒歩6分
+				JR東北本線/「仙台駅」西口から徒歩約4分</br>
+			</p>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/仙台旅館.jpg" alt="なにかの写真">
+			<a href="https://dormy-hotels.com/dormyinn/hotels/sendaiekimae/" target="_blank">
+				天然温泉 杜都の湯 御宿 野乃 仙台
+			</a>
+			<p>
+				天然の杜都の湯のある旅館。和食以外にも洋食や中華料理などもたくさんあります。
+			</p>
+			<p>【所在地】
+				宮城県 仙台市青葉区本町1-5-38<br>
+	
+				【アクセス情報】
+				仙台市営地下鉄南北線/「広瀬通駅」東1出口から徒歩6分
+				JR東北本線/「仙台駅」西口から徒歩約4分</br>
+			</p>
+		</div>
+	</div>
+	<h2>交通手段</h2>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title_KM">
+	
+			</li>
+		</ul>
+		<p id="O_text_explanation_KM">
+
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title_GP">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation_GP">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
+	</div>
+	<h2>お土産</h2>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/oita/zunda.jpg" alt="お土産の写真">
+			<a href="https://kikusuian.jp/infomation/1268/" target="_blank">喜久水庵「ずんだ餅」</a>
+		</div>
+		<div id="box2">
+			<img src="assets/images/oita/moti.jpg" alt="お土産の写真">
+			<a href="https://www.shop.sanzen.co.jp/shop/c/c3000/" target="_blank">菓匠三全「萩の月」</a>
+		</div>
+
+	</div>
+
+</div><!--/.Oita-block-->
+
+<div class="Kagoshima-block">
+	<h2>鹿児島県</h2>
+
+	<h3>写真</h3>
+
+	<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="サンプルテキストサ鹿児島ンプルテキストサンプルテキストの写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/oita/P_00.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真花"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images_photo/7.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images_photo/8.jpg" data-lightbox="group1" data-title="鹿児島の写真">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="鹿児島の写真"></figure>
+		</a>
+	</div>
+
+
+	<h3>地図</h3>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6723.687966466829!2d131.09332460193204!3d31.462705981305202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353ec5de44cef3db%3A0x13e6206366e291c2!2z5b-X5biD5b-X5riv44OV44Kn44Oq44O844K_44O844Of44OK44Or!5e1!3m2!1sja!2sjp!4v1728268170054!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<h3>飲食店</h3>
+	<div id="food_spots">
+		<p>マックスバリュー及びKOHYO及びフジ</p>
+		<p>丸亀製麺志布志店</p>
+	</div>
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<p>志布志市志布志町志布志の看板</p>
+	</div>
+	<h3>ホテル</h3>
+	<div id="hotel">
+		<p>さんふらわあ　さつま・きりしま</p>
+		<p>温泉旅館か東横イン</p>
+	</div>
+	<h3>交通手段</h3>
+	<div id="transportation">
+		<p>さんふらわあ　さつま・きりしま</p>
+		<p>車かヒッチハイクか高速バス</p>
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<p>明石焼き・佐世保バーガー・志布志バーガー・東京カンパネラ</p>
+	</div>
+
+</div><!--/.Kagoshima-block-->
+
+
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="touhoku.html">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="module" src="./js/slick.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
+</body>
+</html>

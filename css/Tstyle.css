@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/*段落(p)タグ*/
+#main p {
+	/* text-align: center; */
+	padding: 10px 20px 15px;	/*上、左右、下への余白*/
+}
+#main a{
+	text-align: center;
+	padding: 0 20px 0px;
+	text-decoration: none;
+}
+
+/* --------------------ここから新しく追加した分 --------------*/
+ #logo a:hover{ /*ここだけマウスオーバーしたときに色が変わらないように */
+	background-color: rgba(0, 0, 0,0);
+}
+
+h4{
+	font-weight: bold;
+}
+#main .photo-block a{
+	padding: 0;
+}
+#food_spots,#hotel,#souvenir,#sightseeing_spots{
+	display: flex;
+	justify-content: space-around;
+}
+#food_spots img,#hotel img,#souvenir img,#sightseeing_spots img{
+	width: auto;
+	height: 200px;
+	padding: 10px;
+}
+#food_spots a{
+	font-size: 90%;
+}
+#food_spots p{
+	font-size: 90%;
+}
+#box1{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+a:hover{
+	background-color: rgb(218, 208, 225);
+}
+#box2{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+}
+#main .transport li{
+	cursor: pointer;
+	border: solid 3px #949494;
+	border-radius: 30px;
+	padding: 10px 20px 10px;
+}
+#main .transport .text_title_KM{
+	color: rgb(214, 22, 22);
+	background-color: #d7c7d7;
+}
+#main .transport .text_title_KM:hover{
+	background-color: #eeafee;
+}
+#main .transport .text_title_GP{
+	color: rgb(1, 136, 181);
+	background-color: #dadbcc;
+}
+#main .transport .text_title_GP:hover{
+	background-color: #bcbc51;
+}
+#main .transport p{
+	display: none;
+	background-color: #dad4ce;
+	border-radius: 10px;
+}
+#main .transport a{
+	text-decoration: underline red;
+}
+#main .transport ul{
+	padding: 5px;
+}
+#main .transport ul li::after{
+    content: "";
+    position: absolute;
+    top:auto;
+    bottom: auto;
+    right: 14%;
+    display: block;
+    width: .9em;
+    height: .5em;
+    margin: auto;
+    background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
+}
+iframe{
+	padding-bottom: 10px;
+}
+.scroll-pos {
+    height: 5px;
+    background-color: #999;
+	width: 70%;
+}
+.scroll-pos .bar {
+    -webkit-transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 0;
+    height: 5px;
+    background-color: #c35219;
+}
+.scroll-pos, #menubar_hdr, #menubar-s{
+	z-index: 100;
+	position: fixed;
+}
+/*ここはlghitboxのcssを編集するところs*/
+.lb-data .lb-tag_a{
+	font-size: 13px;
+}
+
+
+/*画面幅1250px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1250px){
+	#O_title_tab li::after{
+		right: 6em;
+	}
+	#M_title_tab li::after{
+		right: 6em;
+	}
+	.scroll-pos {
+		width: 83%;
+	}
+}	
+/*画面幅480px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px)
+{
+	#food_spots img,#hotel img,#souvenir img{
+		height: 100%;
+	}
+	#O_title_tab li::after{
+		right: 4em;
+	}
+	#M_title_tab li::after{
+		right: 4em;
+	}
+}

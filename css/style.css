@@ -20,6 +20,7 @@ body {
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	background: #fff url(../assets/images/bg1.jpg);	/*背景色、背景画像の読み込み*/
+	
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
@@ -27,6 +28,12 @@ ul {list-style-type: none;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
+
+ul li {
+	padding-top:1%;
+	padding-bottom: 1%;
+	
+}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -49,6 +56,9 @@ a:hover {
 	border-radius: 30px;	/*角丸のサイズ*/
 	padding: 40px;		/*ボックス内の余白*/
 	background: #fff;	/*背景色*/
+	background-image: url(../assets/images/oita/tihou.png);
+	background-repeat: no-repeat;
+	background-position: 700px 1060px;
 }
 
 /*headerブロック
@@ -89,17 +99,32 @@ header #logo {
 	background: url(../assets/images/arrow1.png) no-repeat left center, linear-gradient(#b2a17c, #9a8b6b 49%, #7e7258 50%);	/*背景画像の読み込み、グラデーション*/
 	border-radius: 30px;	/*角丸のサイズ*/
 	padding: 10px 20px 10px 50px;	/*上、右、下、左への見出し内の余白*/
+	
 }
 /*h3タグ*/
-#main h3 {
-	clear: both;
-	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
-	color: #333;			/*文字色*/
-	background: linear-gradient(#fff, #eee);	/*グラデーション*/
-	border-radius: 30px;	/*角丸のサイズ*/
-	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+#image-carousel .kankou-slider {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
 }
+
+.list-menu:hover img {
+	transform: scale(1.1);
+    width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    #image-carousel .kankou-slider {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+
 /*段落(p)タグ*/
 #main p {
 	padding: 0 20px 20px;	/*上、左右、下への余白*/
@@ -115,6 +140,11 @@ header #logo {
 #main section + section {
 	clear: both;
 	padding-top: 30px;
+}
+
+.list-tihou h3 a{
+	background-color: #000;
+	border: solid;
 }
 
 /*Galleryページのサムネイル
@@ -516,3 +546,135 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 .pc {display:none;}
 
 }
+
+.btn1 {
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 5%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#e36fc4eb, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	
+}
+.btn2 {
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 25%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#73a9e3, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn3 {
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 5%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#649d76, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn4 {
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 25%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#e3ae97, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn5{
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 5%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#83d4c5, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn6{
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 25%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#e9cebd, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn7{
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 5%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#d5bad7, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+.btn8{
+	clear: both;
+	margin-bottom: 20px;	/*見出しの下(外側)に空けるスペース*/
+	margin-left: 25%;
+	color: #333;			/*文字色*/
+	background: linear-gradient(#9faecf, #eee);	/*グラデーション*/
+	border-radius: 30px;	/*角丸のサイズ*/
+	padding: 5px 20px;		/*上下、左右への見出し内の余白*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+}
+
+/* スライダー全体のスタイル */
+.slider {
+    display:flex;
+    overflow:scroll;
+}
+
+/* スライド内のアイテム */
+.kankou-slider .list-menu {
+    text-align: center;
+    padding: 10px;
+}
+
+/* 画像スタイル */
+.kankou-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 角を丸める例 */
+}
+
+/* h4 のスタイル */
+.kankou-slider h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* p のスタイル */
+.kankou-slider p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+/* .btn::before {
+	background: linear-gradient(135deg, #6fa24a, #15a1cc);
+	filter: blur(8px);
+	border-radius: 32px;
+	opacity: 0;
+}
+
+@media (any-hover: hover) {
+	.btn::before{
+		transition: opacity 0.2s;
+    	will-change: filter;
+	}
+
+	.btn:hover::before {
+		opacity: 1;
+	}
+} */

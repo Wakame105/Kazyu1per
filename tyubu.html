@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>kyusyu_travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="中部地方の個人的観光情報を書いています。">
+<meta name="keywords" content="中部,旅行,">
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Kstyle.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="assets/images/oita/PH_01.png" alt="">
+</aside>
+</header>
+
+
+<div id="contents">
+
+<div id="main">
+
+<section>
+
+<div class="ishikawa-block">
+	<h2>石川県</h2>
+
+	<h3>写真</h3>
+
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/kenroku.png" data-lightbox="group1" data-title="兼六園 夏">
+		<figure><img src="assets/images/kenroku.png" alt="兼六園 夏"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kenroku2.png" data-lightbox="group1" data-title="兼六園 冬">
+		<figure><img src="assets/images/kenroku2.png" alt="兼六園 冬"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kaga.png" data-lightbox="group1" data-title="加賀温泉郷">
+		<figure><img src="assets/images/kaga.png" alt="加賀温泉郷"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kaga2.png" data-lightbox="group1" data-title="加賀温泉郷">
+		<figure><img src="assets/images/kaga2.png" alt="加賀温泉郷"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kana.png" data-lightbox="group1" data-title="金沢駅">
+		<figure><img src="assets/images/kana.png" alt="金沢駅"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/kana2.png" data-lightbox="group1" data-title="金沢駅">
+		<figure><img src="assets/images/kana2.png" alt="金沢駅"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/higasi.png" data-lightbox="group1" data-title="ひがし茶屋街">
+		<figure><img src="assets/images/higasi.png" alt="ひがし茶屋街"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/higasi2.png" data-lightbox="group1" data-title="ひがし茶屋街">
+		<figure><img src="assets/images/higasi2.png" alt="ひがし茶屋街"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
+	<h3>地図</h3>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205247.66062157!2d136.5223534250787!3d36.5059901042929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83655468566c3%3A0x8df155c46fde6215!2z55-z5bed55yM6YeR5rKi5biC!5e0!3m2!1sja!2sjp!4v1733791343290!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<p>兼六園 &nbsp;
+			加賀温泉郷 &nbsp;
+			金沢駅 &nbsp;
+			ひがし茶屋街</p>
+		
+	</div>
+
+	<h3>飲食店</h3>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/oita/o.png" alt="お食事処堤亭">
+			<a href="https://www.tsutsumitei.jp/" target="_blank">
+				お食事処堤亭
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/n.png" alt="日本料理 加賀屋 金沢店">
+			<a href="https://www.kagaya.co.jp/shoku/shop/kanazawa.php" target="_blank">
+				日本料理 加賀屋 金沢店
+			</a>
+		</div>
+	</div>
+	<h3>ホテル</h3>
+	<div id="hotel">
+		<div id="box1">
+			<img src="assets/images/oita/ho.png" alt="ホテルフォルツァ金沢">
+			<a href="https://www.hotelforza.jp/kanazawa/" target="_blank">
+				ホテルフォルツァ金沢
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/ho2.png" alt="なにかの写真">
+			<a href="https://koko-hotels.com/kanazawa_korinbo_stay/room_kk" target="_blank">
+				KOKO HOTEL Premier 金沢香林坊
+			</a>
+			
+		</div>
+	</div>
+	<h3>交通手段</h3>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title_KM">
+	
+			</li>
+		</ul>
+		<p id="O_text_explanation_KM">
+
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title_GP">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation_GP">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/oita/kin.png" alt="お土産の写真">
+			<a href="https://www.hontaka.jp/shop-list/" target="_blank"></a>
+			<p>本高砂屋 きんつば</p>
+		</div>
+		<div id="box2">
+			<img src="assets/images/oita/miage.png" alt="お土産の写真">
+			<a href="https://www.fumuroya.co.jp/shop-list/" target="_blank"></a>
+			<p>不室のお店 宝の麩</p>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="aiti-block">
+	<h2>愛知県</h2>
+
+	<h3>写真</h3>
+
+	<div class="list">
+		<a href="assets/images/ziburi.png" data-lightbox="group2" data-title="ジブリパーク">
+		<figure><img src="assets/images/ziburi.png" alt="ジブリパーク"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/ziburi2.png" data-lightbox="group2" data-title="ジブリパーク">
+		<figure><img src="assets/images/ziburi2.png" alt="ジブリパーク"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/rego.png" data-lightbox="group2" data-title="レゴランド®・ジャパン">
+		<figure><img src="assets/images/rego.png" alt="レゴランド®・ジャパン"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/rego2.png" data-lightbox="group2" data-title="レゴランド®・ジャパン">
+		<figure><img src="assets/images/rego2.png" alt="レゴランド®・ジャパン"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/ragu.png" data-lightbox="group2" data-title="ラグーナテンボス">
+		<figure><img src="assets/images/ragu.png" alt="ラグーナテンボス"></figure>
+		</a>
+	</div>
+
+	<div class="list">
+		<a href="assets/images/ragu2.png" data-lightbox="group2" data-title="ラグーナテンボス">
+		<figure><img src="assets/images/ragu2.png" alt="ラグーナテンボス"></figure>
+		</a>
+	</div>
+
+
+	<h3>地図</h3>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d836329.9388918913!2d135.73570773566834!3d35.033885712865946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF44CB5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65qKF55Sw77yT5LiB55uu77yR4oiS77yR!3m2!1d34.7024854!2d135.4959506!4m5!1s0x6004bad5499332e7%3A0xeb5fa65d181541a7!2z5oSb55-l55yM!3m2!1d35.0182505!2d137.2923893!5e0!3m2!1sja!2sjp!4v1733880525034!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<p>
+			ジブリパーク &nbsp;
+			レゴランド®・ジャパン &nbsp;
+			ラグーナテンボス</p>
+	</div>
+	
+	<h3>飲食店</h3>
+	<div id="food_spots">
+			<div id="box1"> 
+				<img src="assets/images/oita/sora.png" alt="魔女の谷「空飛ぶオーブン」">
+				<a href="https://ghibli-park.jp/food/flyingoven-grand.html" target="_blank">
+					魔女の谷「空飛ぶオーブン」
+				</a>
+			</div>
+			<div id="box2"> 
+				<img src="assets/images/oita/rego.png" alt="チキン・ダイナー レゴランドジャパン">
+				<a href="https://www.legoland.jp/resort-guide/legoland/food/chicken-diner/" target="_blank">
+					チキン・ダイナー レゴランドジャパン
+				</a>
+			</div>
+	</div>
+	<h3>ホテル</h3>
+	<div id="hotel">
+		<div id="box1">
+			<img src="assets/images/oita/hen.png" alt="変なホテル ラグーナテンボス">
+			<a href="https://www.hennnahotel.com/lagunatenbosch/" target="_blank">
+				変なホテル ラグーナテンボス
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/myu.png" alt="ホテルミュースタイル犬山エクスぺリエンス">
+			<a href="https://www.m-inuyama-h.co.jp/" target="_blank">
+				ホテルミュースタイル犬山エクスぺリエンス
+			</a>
+			
+		</div>
+	</div>
+	<h3>交通手段</h3>
+	<div id="transportation">
+		<p>さんふらわあ　さつま・きりしま</p>
+		<p>車かヒッチハイクか高速バス</p>
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/oita/zibu.png" alt="ハウス缶 ハッター帽子店">
+			<a href="https://dondoko.mahoukai.com/ghibli-park/valley-of-witches/house-cans-of-sweets-16032024710098.html" target="_blank"></a>
+			<p>ハウス缶 ハッター帽子店</p>
+		</div>
+		<div id="box2">
+			<img src="assets/images/oita/" alt="">
+			<a href="" target="_blank"></a>
+			<p></p>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="gifu-block">
+	<h2>岐阜県</h2>
+
+	<h3>写真</h3>
+
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/sirakawa.png" data-lightbox="group3" data-title="白川郷合掌造り集落">
+		<figure><img src="assets/images/sirakawa.png" alt="白川郷合掌造り集落"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/sirakawa2.png" data-lightbox="group3" data-title="白川郷合掌造り集落">
+		<figure><img src="assets/images/sirakawa2.png" alt="白川郷合掌造り集落"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/gero.png" data-lightbox="group3" data-title="下呂温泉">
+		<figure><img src="assets/images/gero.png" alt="下呂温泉"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/gero2.png" data-lightbox="group3" data-title="下呂温泉">
+		<figure><img src="assets/images/gero2.png" alt="下呂温泉"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/eki.png" data-lightbox="group3" data-title="飛騨古川駅">
+		<figure><img src="assets/images/eki.png" alt="飛騨古川駅"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/eki2.png" data-lightbox="group3" data-title="飛騨古川駅">
+		<figure><img src="assets/images/eki2.png" alt="飛騨古川駅"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/gun.png" data-lightbox="group3" data-title="郡上八幡城">
+		<figure><img src="assets/images/gun.png" alt="郡上八幡城"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/gun2.png" data-lightbox="group3" data-title="郡上八幡城">
+		<figure><img src="assets/images/gun2.png" alt="郡上八幡城"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
+	<h3>地図</h3>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d834320.1025914921!2d135.57748883582633!3d35.22980418528323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF44CB5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65qKF55Sw77yT5LiB55uu77yR4oiS77yR!3m2!1d34.7024854!2d135.4959506!4m5!1s0x6002f1f20a88c38b%3A0xaf2714adeeccd667!2z5bKQ6Zic55yM!3m2!1d35.743749099999995!2d136.9805103!5e0!3m2!1sja!2sjp!4v1733899680906!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<p>白川郷合掌造り集落 &nbsp;
+			下呂温泉 &nbsp;
+			飛騨古川駅 &nbsp;
+			郡上八幡城</p>
+		
+	</div>
+
+	<h3>飲食店</h3>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/oita/g.png" alt="大安食堂">
+			<a href="https://daiansyokudou.com/" target="_blank">
+				大安食堂
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/g2.png" alt="郷土料理　芳花園">
+			<a href="https://gujo21.sakura.ne.jp/houkaen/houkaen.html" target="_blank">
+				郷土料理　芳花園
+			</a>
+		</div>
+	</div>
+	<h3>ホテル</h3>
+	<div id="hotel">
+		<div id="box1">
+			<img src="assets/images/oita/gh.png" alt="湯あそびの宿 下呂観光ホテル">
+			<a href="https://www.geroyado.co.jp/" target="_blank">
+				湯あそびの宿 下呂観光ホテル
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/oita/ekih.png" alt="大村屋旅館">
+			<a href="https://www.hida-kankou.jp/reserve/488" target="_blank">
+				大村屋旅館
+			</a>
+			
+		</div>
+	</div>
+	<h3>交通手段</h3>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title_KM">
+	
+			</li>
+		</ul>
+		<p id="O_text_explanation_KM">
+
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title_GP">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation_GP">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/oita/gifu.png" alt="お土産の写真">
+			<a href="https://www.hida-kankou.jp/spot/185" target="_blank"></a>
+			<p>おみやげ処 岡田屋</p>
+		</div>
+		<div id="box2">
+			<img src="assets/images/oita/gifu2.png" alt="お土産の写真">
+			<a href="https://www.azusaya.co.jp/SHOP/H00003.html" target="_blank"></a>
+			<p>飛騨あずさ 飛騨銘菓 しらさぎ物語</p>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="kyusyu.html">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
+</body>
+</html>

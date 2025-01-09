@@ -56,9 +56,16 @@ a:hover {
 	border-radius: 30px;	/*角丸のサイズ*/
 	padding: 40px;		/*ボックス内の余白*/
 	background: #fff;	/*背景色*/
-	background-image: url(../assets/images/oita/tihou.png);
 	background-repeat: no-repeat;
-	background-position: 700px 1060px;
+	background-position: 600px 1020px;
+}
+
+.tihou1 {
+	top: 132%;
+	bottom: 0px;
+	right: 20%;
+	margin: auto 0;
+	position: absolute;
 }
 
 /*headerブロック
@@ -370,7 +377,18 @@ p.check a {color: #fff;}
 }
 
 }
-
+@media screen and (max-width:1300px){
+	.tihou1 {
+		top: 130%;
+		right: 10%;
+	}
+}
+@media screen and (max-width:1000px){
+	.tihou1 {
+		top: 125%;
+		right: 10%;
+	}
+}
 
 
 /*画面幅800px以下の設定

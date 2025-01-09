@@ -1,126 +1,284 @@
-<!-- サイトの詳細設定 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>hokkaido_travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="北海道の個人的観光情報を書いています。">
+<meta name="keywords" content="北海道,旅行,">
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Hstyle.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
 
-<!-- ページタグの名前 -->
-<title>チーム制作テンプレート　サイトタイトル</title>
-<meta name="" content="サイト説明">
-<meta name="" content="サイト説明">
+<body>
 
-<!--CSSと繋いでいる部分-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
-<link rel="stylesheet" href="css/main.css">
+<div id="container">
 
-<!-- 全体 -->
-<body class="hokkaido">
-<div class="header-h1-img-wrap"></div>
-
-<!-- ヘッダー -->
 <header>
-    <!-- ロゴ -->
-    <h1>
-        <a href="#"><img src="" alt="あああああああああああ"></a>
-    </h1>
-
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="assets/images/oita/PH_01.png" alt="">
+</aside>
 </header>
 
-<div id="container"><!--CSSグループのためCSSとの結合時に変更する-->
+<div id="contents">
 
-<!--ページの上部へ戻るボタン-->
-<div class="return" id="returnToTop">
-    <a href="#">  </a>
+<div id="main">
+
+<section>
+	<h3>※注意!!※</h3>
+	<div class = "carefull">
+		<p>北海道への観光については時期によって3万円を越えてしまうことがあります。<br>
+			ご自身でお調べの上、計画を立てることを推奨します。</p>
+	</div>
+
+	<h3>写真</h3>
+	<div class = "preparation">
+	<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+	</div>
+<!--
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="黄色のバラの花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="坊主地獄"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_02.jpg" data-lightbox="group1" data-title="藤の花">
+		<figure><img src="assets/images/oita/P_02_mini.png" alt="油谷熊八の像"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_03.jpg" data-lightbox="group1" data-title="蓮の葉">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="蓮の葉"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="八重桜">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="八重桜"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="白いバラ">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="白いバラ"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="蓮の花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="蓮の花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="バラの花">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="バラの花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/oita/P_01.jpg" data-lightbox="group1" data-title="四つ葉のクローバー">
+		<figure><img src="assets/images/oita/P_01_mini.png" alt="四つ葉のクローバー"></figure>
+		</a>
+		</div>
+		
+		</div>
+	-->
+		<!--/.photo-block-->
+	<!--<h3>地図</h3>
+	 <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<!--
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d789484.2558450999!2d130.812205741997!3d33.17408010491026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35445c95e3d84793%3A0x3f17b7f27036bee2!2z5aSn5YiG55yM!5e1!3m2!1sja!2sjp!4v1731561285830!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	-->
+	<h3>飲食店</h3>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/hokkaido/suzikosyoyuzuke.jpg" alt="回転寿司　根室花まる">
+			<a href="https://www.sushi-hanamaru.com/" target="_blank">
+				回転寿司　根室花まる
+			</a>
+		</div>
+		<div id="box2"> 
+			<div class = "preparation">
+				<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+				</div>
+			<a href="https://www.donbe.sapporo-asaichi.com/" target="_blank">
+				丼兵衛
+			</a>
+		</div>
+		<div id = "box3">
+			<div class = "preparation">
+				<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+				</div>
+			<a href="https://www.menya-saimi.com/" target="_blank">
+				麺屋　彩未
+			</a>
+		</div>
+	</div>
+	<h3>観光スポット</h3>
+	<div id="sightseeing_spots">
+		<p>札幌市円山動物園</p>
+		<a href="https://www.city.sapporo.jp/" target="_blank">
+		 	<img src="assets/images/hokkaido/sapporo_banner.jpg" alt="札幌公式ページのバナー" >
+		</a>
+		<div class = "preparation">
+			<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+			</div>
+		<p>札幌二条市場</p>
+		<div class = "preparation">
+			<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+			</div>
+		<p>白い恋人パーク</p>
+		<!--↑写真は申請が必要なため後で追加-->
+	</div>
+	<h3>宿泊施設</h3>
+	<div id="hotel">
+		<div id="box1">
+				東横INNがおすすめ。<br>
+				時期によっては5000円代で一泊することができる
+			</a>
+		</div>
+		<div id="box2"> 
+			<p id="text_hotel2">
+				ねっとかふぇ<br>
+				安く済ませるならねっとかふぇが一番。<br>
+				ただし札幌付近でないと少ない＆最寄り駅から遠い場合が多いようなので注意。	
+			</p>
+		</div>
+	</div>
+	<h3>交通手段</h3>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title">
+				飛行機<br>
+				時期にもよるが格安航空をつかえば7000円台から利用することができる。<br>
+				繫忙期ではない時期を見計らって安く北海道に行こう！
+			</li>
+		</ul>
+		<!--
+		<p id="O_text_explanation">例:金曜日の16:40に大阪発→17:05阪神御影着→徒歩5分でバス乗り場へ。<br>
+			17:23発のバス→17:58フェリー乗り場着→乗船手続きをし乗船。<br>
+			19:00神戸港を出発→お風呂入ったりして船旅(食料を持ち込むのが安く済むゾ)。<br>
+			翌日土曜日07:20大分港に到着。自由行動。<br>
+			18:30には乗船手付きをしておき、19:30大分港発。<br>
+			 翌日日曜日07:55神戸港に到着する。そこから大阪に帰る。
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title2">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation2">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
+		-->
+	</div>
+	<h3>お土産</h3>
+	<div id="souvenir">
+		<div id="box1">
+			<div class = "preparation">
+				<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+				</div>
+			<p>白い恋人</p>
+		</div>
+		<div id="box2">
+			<div class = "preparation">
+				<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+				</div>
+			<p>じゃがぽっくる</p>
+		</div>
+		<!--<div id="box3">
+			<img src="assets/images/oita/P_01.jpg" alt="お土産の写真">
+			<a href="http://www.yamabukiiro.com/" target="_blank">白いブラックサンダー</a>
+		</div>-->
+
+		<div id="box3">
+			<div class = "preparation">
+				<img src="assets/images/hokkaido/preparation.png" alt="zyunnbityuu">
+				</div>
+			<p>白いブラックサンダー</p>
+		</div>
+
+	</div>
 </div>
+<!--/#main-->
 
-<header><!--ロゴの表示-->
+<div id="sub">
 
-<!-- ハンバーガーメニューの実装 -->
-<div class="hamburger-menu">
-    <input type="checkbox" id="menu-btn-check">
-    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
 
-    <!-- メニューの追加 -->
-    <div class="menu-content">
-        <ul>
-            <li><a href="#special-list">北海道地方</a></li>
-            <li><a href="#blurs">東北地方</a></li>
-            <li><a href="#list-grid">中部地方</a></li>
-            <li><a href="#news">関東地方</a></li>
-            <li><a href="#kinnki">近畿地方</a></li>
-            <li><a href="#sikoku">四国地方</a></li>
-            <li><a href="#tyuugoku">中国地方</a></li>
-            <li><a href="#kyuusyuu">九州地方</a></li>
-            <li><a href="#okinawa">沖縄地方</a></li>
-        </ul>
 
-        <!-- ソーシャルメディアのアイコン いつか入れる-->
-        
-    </div>
+
 </div>
+<!--/#sub-->
 
-<!-- スライドするメニュー -->
-<section id="special-list">
-<div class="list-slider">
-    <div id="l1" class="list-menu">
-        <img src="image/IMG_5722.jpg" alt="だん">
-        <h4>ここにタイトルを入れます</h4>
-        <p>ここに説明を入れます。サンプルテキスト。ここに説明を入れます。サンプルテキスト。ここに説明を入れます。サンプルテキスト。ここに説明を入れます。サンプルテキスト。ここに説明を入れます。サンプルテキスト。ここに説明を入れます。サンプルテキスト。</p>
-    </div>
-
-    
 </div>
-</section>
-</header>
+<!--/#contents-->
 
-<!-- サイトについての蘭 -->
-<main>
-<section id="blurs">
-<section class="blur">
-<div class="blur-border">
-<h1>サイトについて</h1>
-<h2>
-    旅行
-</h2>
-</section>
-<p></p>
 </div>
-</div>
-</section>
+<!--/#container-->
 
-<!-- ギャラリー -->
-<section id="list-grid">
-    <div class="list-grid-trimming">
-       
-    </div>
-</section>
-
-<!-- 新着ニュース -->
-<section id="news">
-    <h2>新着情報</h2>
-    <script>
-        let nowDate = new Date();
-    </script>
-    <dl>
-        <a href="#">情報を更新</a></dt>
-    </dl>
-</section>
-</main>
-
-<!-- 一番下の文字 -->
 <footer>
-<small>Copyright&copy; <a href="index.html">SAMPLE HOME</a> All Rights Reserved.</small>
+<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
 
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="kyusyu.html">↑</a></p>
 
-<!--開閉ボタン（ハンバーガーアイコン）-->
-<div id="menubar_hdr">
-<span></span><span></span><span></span>
-</div>
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
 
-
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
 </body>
 </html>

@@ -3,10 +3,6 @@ let tab = $('#O_text_title_KM');
 let obj =  $("#O_text_explanation_KM");
 let tab2 = $('#O_text_title_GP');
 let obj2 =  $("#O_text_explanation_GP");
-let Mtab = $('#M_text_title_KM');
-let Mobj =  $("#M_text_explanation_KM");
-let Mtab2 = $('#M_text_title_GP');
-let Mobj2 =  $("#M_text_explanation_GP");
 let lb_PH = $(".lb-tag_a");
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
@@ -25,12 +21,6 @@ tab.on('click',function(){
 })
 tab2.on('click',function(){
     obj2.slideToggle();
-})
-Mtab.on('click',function(){
-  Mobj.slideToggle();
-})
-Mtab2.on('click',function(){
-  Mobj2.slideToggle();
 })
 
 //==========================Jsonから読み取り=========================
@@ -51,20 +41,6 @@ $(function(){
         for(let j in data.TPSnd.contents){
           obj2.append(data.TPSnd.contents[j]);
         }
-         //========3つ目============
-         Mtab.append(data.TPFst.title);  
-         obj.append('<a href=' + data.TPFst.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>'
-         );
-         for(let k in data.TPFst.contents){
-           obj.append(data.TPFst.contents[k]);
-         }
-         //========4つ目============
-         Mtab2.append(data.TPSnd.title);
-         obj2.append('<a href=' + data.TPSnd.url + ' target="_blank"> このプランの詳細のURLはこちらから </a><br>' 
-         );
-         for(let l in data.TPSnd.contents){
-           obj2.append(data.TPSnd.contents[l]);
-         }
     });
 });
 

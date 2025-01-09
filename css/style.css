@@ -61,9 +61,9 @@ a:hover {
 }
 
 .tihou1 {
-	top: 1200px;
+	top: 132%;
 	bottom: 0px;
-	right: 50px;
+	right: 20%;
 	margin: auto 0;
 	position: absolute;
 }
@@ -377,7 +377,18 @@ p.check a {color: #fff;}
 }
 
 }
-
+@media screen and (max-width:1300px){
+	.tihou1 {
+		top: 130%;
+		right: 10%;
+	}
+}
+@media screen and (max-width:1000px){
+	.tihou1 {
+		top: 125%;
+		right: 10%;
+	}
+}
 
 
 /*画面幅800px以下の設定

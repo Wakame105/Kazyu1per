@@ -93,5 +93,8 @@ if( !window.scrollTop ) {
       jsonCOunt = JSON.stringify(count);                // countの値をJSON形式に変換
       localStorage.setItem('storage',jsonCOunt);        //localstorageに保存
     }
+    if(!count){
+      count=1;
+    }
     ght.append(count+'回');
   });

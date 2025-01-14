@@ -132,8 +132,8 @@ iframe{
 #maru_C{
 	font-size: 13px;
 }
-#tp{
-	
+#visitors{
+	display: flex;
 }
 
 /*画面幅1250px以下の設定

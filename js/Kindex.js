@@ -72,29 +72,3 @@ if( !window.scrollTop ) {
     window.addEventListener('scroll',onscroll,false);
   }
   setScrollPos();
-
-  //======================個人アクセス回数をcookieに保持そして掲載する===========================
-  let ght = $('#visitors');
-  let vst;
-  let uyt = $.cookie("visitors");
-  if(uyt){
-    vst = (+$.cookie("visitors"))+(+"1");
-  }
-  else{
-    vst = 1;   
-  }
-  $.cookie('visitors',vst,{expires:1});
-
-  window.addEventListener("load",()=>{
-    var jsonCOunt = localStorage.getItem('storage');  //localstorageから値の取り出し
-    var count = JSON.parse(jsonCOunt);                //JSON形式からJavaScriptのオブジェクトに戻す
-    if(!uyt){
-      count++;
-      jsonCOunt = JSON.stringify(count);                // countの値をJSON形式に変換
-      localStorage.setItem('storage',jsonCOunt);        //localstorageに保存
-    }
-    if(!count){
-      count=1;
-    }
-    ght.append(count+'回');
-  });

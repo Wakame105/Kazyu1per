@@ -132,6 +132,13 @@ iframe{
 #maru_C{
 	font-size: 13px;
 }
+#tp{
+	border-radius: 10px;
+	border: solid rgb(169, 215, 200);
+}
+#tp_1{
+	font-weight: bold;
+}
 #visitors{
 	display: flex;
 }

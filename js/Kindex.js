@@ -72,16 +72,3 @@ if( !window.scrollTop ) {
     window.addEventListener('scroll',onscroll,false);
   }
   setScrollPos();
-
-  //======================アクセス回数をcookieに保持そして掲載する===========================
-  let ght = $('#visitors');
-  let vst;
-  let uyt = $.cookie("visitors");
-  if(uyt){
-    vst = (+$.cookie("visitors"))+(+"1");
-  }
-  else{
-    vst = 1;   
-  }
-  $.cookie('visitors',vst,{expires:1});
-  ght.append(vst+'回');

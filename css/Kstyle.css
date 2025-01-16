@@ -133,7 +133,14 @@ iframe{
 	font-size: 13px;
 }
 #tp{
-	
+	border-radius: 10px;
+	border: solid rgb(169, 215, 200);
+}
+#tp_1{
+	font-weight: bold;
+}
+#visitors{
+	display: flex;
 }
 
 /*画面幅1250px以下の設定

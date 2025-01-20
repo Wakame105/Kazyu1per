@@ -61,7 +61,7 @@ a:hover {
 }
 
 .tihou1 {
-	top: 132%;
+	top: 170%;
 	bottom: 0px;
 	right: 20%;
 	margin: auto 0;
@@ -379,13 +379,13 @@ p.check a {color: #fff;}
 }
 @media screen and (max-width:1300px){
 	.tihou1 {
-		top: 130%;
+		top: 170%;
 		right: 10%;
 	}
 }
 @media screen and (max-width:1000px){
 	.tihou1 {
-		top: 125%;
+		top: 155%;
 		right: 10%;
 	}
 }

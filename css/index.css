@@ -1,0 +1,59 @@
+#main #Gacha{
+    margin-top: 30px;
+}
+.Gacha_content{
+    display: none;
+    justify-content: space-around;
+    background-color: rgba(127, 255, 212, 0.623);
+    border-radius: 10px;
+}
+.Gacha_content img ,.Gacha_content div{
+    padding: 10px;
+}
+#main #Gacha_button{
+    padding: 10px;
+    color: brown;
+    font-weight: bold;
+    background-color: rgb(186, 178, 194);
+    border: 5px solid rgb(206, 246, 246);
+}
+#Gacha_button:hover{
+    cursor: pointer;
+}
+
+#Gacha_img{
+    width: 300px;
+    height:200px;
+}
+#Gacha_title{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(219, 95, 95);
+    text-decoration: underline rgb(72, 148, 229);
+}
+
+@media screen and (max-width:1200px)
+{
+    #Gacha_img{
+        height:260px;
+    }
+}
+
+@media screen and (max-width:1070px)
+{
+    #Gacha_img{
+        height:200px;
+    }
+}
+@media screen and (max-width:900px)
+{
+    #Gacha_img{
+        height:170px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    #Gacha_img{
+        height:100px;
+    }
+}

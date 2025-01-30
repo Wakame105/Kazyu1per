@@ -17,8 +17,9 @@
     background-color: rgb(186, 178, 194);
     border: 5px solid rgb(206, 246, 246);
 }
-#Gacha_button:hover{
+#main #Gacha_button:hover{
     cursor: pointer;
+    background-color: #999;
 }
 
 #Gacha_img{
@@ -31,12 +32,18 @@
     color: rgb(219, 95, 95);
     text-decoration: underline rgb(72, 148, 229);
 }
+.tihou1{
+    top: 180%;
+}
 
 @media screen and (max-width:1200px)
 {
     #Gacha_img{
         height:260px;
     }
+    .tihou1{
+        top: 175%;
+    }    
 }
 
 @media screen and (max-width:1070px)
@@ -44,16 +51,38 @@
     #Gacha_img{
         height:200px;
     }
+    .tihou1{
+        top: 170%;
+    }   
+}
+@media screen and (max-width:1000px)
+{
+    .tihou1{
+       width: 25%;
+    }   
 }
 @media screen and (max-width:900px)
 {
     #Gacha_img{
         height:170px;
     }
+    .tihou1{
+        top: 165%;
+    }   
+}
+@media screen and (max-width:800px)
+{
+    .tihou1{
+        width: 40%;
+        top: 155%;
+     }   
 }
 @media screen and (max-width:600px)
 {
     #Gacha_img{
         height:100px;
     }
+    .tihou1{
+        top: 150%;
+    }   
 }

@@ -72,3 +72,10 @@ if( !window.scrollTop ) {
     window.addEventListener('scroll',onscroll,false);
   }
   setScrollPos();
+  //================scroll to top============================
+  let button_a =  $('#navi_button');
+$(function(){   
+    button_a.on('click',function(){
+    $('html, body').animate({scrollTop:0},300);
+    })
+})

@@ -16,6 +16,7 @@
     font-weight: bold;
     background-color: rgb(186, 178, 194);
     border: 5px solid rgb(206, 246, 246);
+    text-align: center;
 }
 #main #Gacha_button:hover{
     cursor: pointer;

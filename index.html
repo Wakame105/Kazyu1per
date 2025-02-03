@@ -87,11 +87,17 @@
 <div id="Gacha-box">
 	<p id="Gacha_button">ランダムであなたの行き先を決めてくれます！是非参考にしてくださいね！</p>
 	<div id="Gacha_content1" class="Gacha_content">
-		<img src="" alt="ランダムな行き先の画像" id="Gacha_img">
-		<div>
+		<div id="img_box" class="GCC">
+			<img src="" alt="ランダムな行き先の画像" id="Gacha_img">
+			<div>
+			<span id="maru_C"></span>
+			<a id="maru_C_text" href=""></a>
+			</div>
+		</div>
+		<div id="text_box" class="GCC">
 			<h4 id="Gacha_title"> 能登半島</h4>
-			<ul id="Gacha_text1"> ～の温泉郷</ul>
-			<ul id="Gacha_text2"> ～の温泉郷</ul>
+			<ul id="Gacha_text1" class="GC_tx"> ～の温泉郷</ul>
+			<ul id="Gacha_text2" class="GC_tx"> ～の温泉郷</ul>
 		</div>
 	</div>
 	<div id="Gacha_content2" class="Gacha_content">
@@ -171,6 +177,7 @@ if (OCwindowWidth() <= 800) {
 </script>
 <!-- <script src="js/jquery.min.js"></script> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyC8JH3nnbHjZ-lRnlUpq93rWnV2UWUbi0o", v: "beta"});</script>
 <script src="js/index.js"></script>

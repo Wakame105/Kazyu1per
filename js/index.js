@@ -63,7 +63,10 @@ function change_obj(){
         GC_CPR_txt.text(obj.CPR);
         GC_CPR_txt.attr('href',obj.CPR_url)
     }
-    
+    else{
+        GC_CPR.text("");
+        GC_CPR_txt.text("");
+    }
 }
 
 function GetRandomNumber(){

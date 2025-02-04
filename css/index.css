@@ -1,0 +1,103 @@
+#main #Gacha{
+    margin-top: 30px;
+}
+.Gacha_content{
+    display: none;
+    justify-content: space-around;
+    background-color: rgba(186, 227, 213, 0.623);
+    margin: 5px;
+}
+.Gacha_content #text_box{
+    padding-right: 10px;
+}
+#main #Gacha_button{
+    padding: 10px;
+    color: brown;
+    font-weight: bold;
+    background-color: rgb(186, 178, 194);
+    border: 5px solid rgb(206, 246, 246);
+    text-align: center;
+}
+#main #Gacha_button:hover{
+    cursor: pointer;
+    background-color: #999;
+}
+.GCC{
+    width: 50%;
+    text-align: center;
+}
+#Gacha_img{
+    width: 80%;
+    height:200px;
+    padding: 5px;
+}
+#Gacha_title{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(219, 95, 95);
+    text-decoration: underline rgb(72, 148, 229);
+}
+.tihou1{
+    top: 180%;
+}
+
+#maru_C{
+	font-size: 13px;
+}
+#maru_C_text:hover{
+    background-color: #99999999;
+}
+
+@media screen and (max-width:1200px)
+{
+    #Gacha_img{
+        height:260px;
+    }
+    .tihou1{
+        top: 175%;
+    }    
+}
+
+@media screen and (max-width:1070px)
+{
+    #Gacha_img{
+        height:200px;
+    }
+    .tihou1{
+        top: 170%;
+    }   
+}
+@media screen and (max-width:1000px)
+{
+    .tihou1{
+       width: 25%;
+    }   
+}
+@media screen and (max-width:900px)
+{
+    #Gacha_img{
+        height:170px;
+    }
+    .tihou1{
+        top: 165%;
+    }   
+    .Gacha_content #text_box .GC_tx{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:800px)
+{
+    .tihou1{
+        width: 40%;
+        top: 155%;
+     }   
+}
+@media screen and (max-width:600px)
+{
+    #Gacha_img{
+        height:100px;
+    }
+    .tihou1{
+        top: 150%;
+    }   
+}

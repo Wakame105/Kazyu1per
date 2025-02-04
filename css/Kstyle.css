@@ -48,6 +48,13 @@ h4{
 #food_spots p{
 	font-size: 90%;
 }
+.box{
+	padding: 5px;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+	border: 1px solid rgba(133, 194, 151, 0.414);
+}
 #box1{
 	padding: 5px;
 	width: 50%;
@@ -95,6 +102,7 @@ a:hover{
 	padding: 5px;
 }
 #main .transport ul li::after{
+	transition: all 0.5s;
     content: "";
     position: absolute;
     top:auto;
@@ -105,6 +113,12 @@ a:hover{
     height: .5em;
     margin: auto;
     background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
+}
+#main .open #O_text_title_KM::after{
+	transform:rotate(180deg);
+}
+#main .open #O_text_title_GP::after{
+	transform:rotate(180deg);
 }
 iframe{
 	padding-bottom: 10px;
@@ -165,8 +179,14 @@ iframe{
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:480px)
 {
-	#food_spots img,#hotel img,#souvenir img{
-		height: 100%;
+	ul{
+		font-size: 12px;
+	}
+	#maru_C{
+		font-size: 8px;
+	}
+	#food_spots img,#hotel img,#souvenir img,#sightseeing_spots img{
+		height: 50%;
 	}
 	#O_title_tab li::after{
 		right: 4em;

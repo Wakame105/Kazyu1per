@@ -8,6 +8,7 @@
 <meta name="description" content="旅行プラン紹介">
 <meta name="keywords" content="旅行,学生">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
 <!--[if lt IE 9]>
@@ -48,8 +49,10 @@
 <section id="new">
 <h2>★更新情報・お知らせ★</h2>
 <dl>
+<dt>2025/01/21</dt>
+<dd>九州地方の制作がおおむね完了<span class="newicon">NEW</span></dd>
 <dt>2024/11/07</dt>
-<dd>webサイト基盤制作。<span class="newicon">NEW</span></dd>
+<dd>webサイト基盤制作。</dd>
 <dt>2024/10/10</dt>
 <dd>旅行サイト制作決定<dd>
 
@@ -78,7 +81,39 @@
 	<li><a href="sikoku.html"class="btn7">四国地方</a></li>
 	<li><a href="kyusyu.html"class="btn8">九州地方</a></li>
 </ul>
-<img src="assets/images/oita/tihou1.png" alt="" class="tihou1">
+<img src="assets/images/oita/tihou1.png" alt="" class="tihou1" usemap="#point">
+<map name="point">
+	<area alt="北海道" 	shape="rect" coords="160,0,300,100" href="hokkaido.html">
+	<area alt="東北" 	shape="rect" coords="160,100,220,160" href="touhoku.html">
+	<area alt="関東"	shape="rect" coords="160,170,200,250" href="kantou.html">
+	<area alt="中部" 	shape="rect" coords="130,150,150,230" href="tyubu.html">
+	<area alt="近畿" 	shape="rect" coords="85,180,120,250" href="kinki.html">
+	<area alt="中国" 	shape="rect" coords="35,200,90,230" href="tyugoku.html">
+	<area alt="四国" 	shape="rect" coords="50,230,90,260" href="sikoku.html">
+	<area alt="九州" 	shape="rect" coords="0,215,70,300" href="kyusyu.html">
+</map>
+
+<h2 id="Gacha">何処に行こうか迷っているあなたに！</h2>
+<div id="Gacha-box">
+	<p id="Gacha_button">ランダムであなたの行き先を決めてくれます！是非参考にしてくださいね！</p>
+	<div id="Gacha_content1" class="Gacha_content">
+		<div id="img_box" class="GCC">
+			<img src="" alt="ランダムな行き先の画像" id="Gacha_img">
+			<div>
+			<span id="maru_C"></span>
+			<a id="maru_C_text" href=""></a>
+			</div>
+		</div>
+		<div id="text_box" class="GCC">
+			<h4 id="Gacha_title"> 能登半島</h4>
+			<ul id="Gacha_text1" class="GC_tx"> ～の温泉郷</ul>
+			<ul id="Gacha_text2" class="GC_tx"> ～の温泉郷</ul>
+		</div>
+	</div>
+	<div id="Gacha_content2" class="Gacha_content">
+
+	</div>
+</div>
 <!--
 <p>このテンプレートは、<a href="https://template-party.com/">Template Party</a>にて無料配布している『個人サイト向けシンプル無料ホームページテンプレート tp_simple7』です。必ずダウンロード先のサイトの<a href="https://template-party.com/read.html">利用規約</a>をご一読の上でご利用下さい。</p>
 <p><strong class="color1">■HP最下部の著作表示『Web Design:Template-Party』は無断で削除しないで下さい。</strong><br>
@@ -124,7 +159,7 @@
 <!--/#container-->
 
 <footer>
-<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<small>Copyright&copy; <a href="index.html">HOME</a> All Rights Reserved.</small>
 <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
 </footer>
 
@@ -150,6 +185,11 @@ if (OCwindowWidth() <= 800) {
 	open_close("menubar_hdr", "menubar-s");
 }
 </script>
-
+<!-- <script src="js/jquery.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyC8JH3nnbHjZ-lRnlUpq93rWnV2UWUbi0o", v: "beta"});</script>
+<script src="js/index.js"></script>
 </body>
 </html>

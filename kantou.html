@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>kanntou_travel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="関東地方の個人的観光情報を書いています。">
+<meta name="keywords" content="関東,旅行,">
+<link rel="stylesheet" href="css/Ksanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Kstyle.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://www.chartjs.org/chartjs-chart-financial/chartjs-chart-financial.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+				speed: 5000,
+                
+                slideWidth: 400, // 画像の横幅
+            });
+        });
+</script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="assets/images/logo.png" alt="SAMPLE WEB SITE"></a></h1>
+<aside id="mainimg">
+<img src="assets/images/oita/PH_01.png" alt="">
+</aside>
+</header>
+
+<div id="contents">
+<div id="main">
+
+<section>
+
+
+<div class="Oita-block">
+	<h2>東京都</h2>
+	<h3><font color="red">東京都の魅力</font></h3>
+	<p>
+		東京都は1603年に幕府を開きそこから現在の日本の首都になりました。<br>
+		全国で最も多い約1400万人が暮らし、世界有数の大都市になっています。<br>
+        政治、経済、文化などさまざまな分野において日本の中心となっています。
+	</p>
+	<h2>写真</h2>
+
+	<div class="photo-block">
+
+		<div class="list">
+		<a href="assets/images/tokyo/panda.jpeg" data-lightbox="group1" data-title="上野動物園">
+		<figure><img src="assets/images/tokyo/panda.jpeg" alt="坊主地獄"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/asakusa.jpg" data-lightbox="group1" data-title="浅草寺">
+		<figure><img src="assets/images/tokyo/asakusa.jpg" alt="伊達政宗の像"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/bridge.jpg" data-lightbox="group1" data-title="レインボーブリッジ">
+		<figure><img src="assets/images/tokyo/bridge.jpg" alt="蓮の葉"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/odaiba.jpg" data-lightbox="group1" data-title="お台場ショッピングモール">
+		<figure><img src="assets/images/tokyo/odaiba.jpg" alt="八重桜"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/tana900.jpg" data-lightbox="group1" data-title="すみだ切子館">
+		<figure><img src="assets/images/tokyo/tana900.jpg" alt="白いバラ"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/tokyotree.jpg" data-lightbox="group1" data-title="東京スカイツリー">
+		<figure><img src="assets/images/tokyo/tokyotree.jpg" alt="蓮の花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/top_cb1_03.jpg" data-lightbox="group1" data-title="屋形船">
+		<figure><img src="assets/images/tokyo/top_cb1_03.jpg" alt="バラの花"></figure>
+		</a>
+		</div>
+		
+		<div class="list">
+		<a href="assets/images/tokyo/tokyostation.jpg" data-lightbox="group1" data-title="東京駅">
+		<figure><img src="assets/images/tokyo/tokyostation.jpg" alt="四つ葉のクローバー"></figure>
+		</a>
+		</div>
+		
+		</div>
+		<!--/.photo-block-->
+	<h2>地図</h2>
+	<!-- <p>&lt;div class=&quot;list&quot;&gt;を&lt;div class=&quot;list <span class="color1">circle</span>&quot;&gt;にすると以下のように円形になります。</p> -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414924.6045818462!2d139.26216498785996!3d35.662263154228214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2z5p2x5Lqs6YO95p2x5Lqs!5e0!3m2!1sja!2sjp!4v1733978091728!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<h2>飲食店</h2>
+	<div id="food_spots">
+		<div id="box1"> 
+			<img src="assets/images/tokyo/rosemary.jpg" alt="ROSEMARY`S TOKYO">
+			<p>【所在地】
+				〒151-0051 東京都渋谷区千駄ケ谷５丁目２４−５５<br>
+
+
+
+			【営業時間】
+			 11:00~22:00<br>
+
+			【定休日】
+			なし<br>
+
+            【アクセス情報】
+			JR各線「新宿駅」ミライナタワー改札・甲州街道改札・新南改札方面より直結<br>
+            都営新宿線・都営大江戸線・京王新線「新宿駅」より徒歩5分。<br>
+            東京メトロ副都心線「新宿三丁目駅」より徒歩3分。（地下1階地下鉄口直結）<br>
+			</p>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5245765147743!2d139.6988954757881!3d35.688706672584864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cdaa1fc6fa5%3A0xb981344e2d0a546e!2sROSEMARY&#39;S%20TOKYO!5e0!3m2!1sja!2sjp!4v1733979316890!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<a href="http://rosemarystyo.com/" target="_blank">
+				resemary`s Tokyo
+			</a>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/tokyo/zion.jpg" alt="大手町zion">
+			<p>【所在地】
+				〒101-0047 東京都千代田区内神田１丁目５−１６ アルテ大手町 １F<br>
+	
+				【営業時間】
+				 17:00~22:30<br>
+	
+				【定休日】
+				なし<br>
+	
+				【アクセス情報】
+				神田駅　各種西口より徒歩6分<br>
+                大手町駅　A1、A2、A4より徒歩6分<br>
+                神田駅から525m</br>
+			</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.471382580395!2d139.76341177578817!3d35.69001607258442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0690edb3cb%3A0xee374aec0d9fa7b0!2z44Kk44K_44Oq44Ki44OzIOWxhemFkuWxiyDlpKfmiYvnlLpaSU9O!5e0!3m2!1sja!2sjp!4v1733979387835!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<a href="https://gak2902.gorp.jp/" target="_blank">
+                大手町zion
+			</a>
+		</div>
+	</div>
+	<h2>観光スポット</h2>
+		<div class="slider">
+			<img src="assets/images/tokyo/151218155236_tokyo_area_236_612.jpg" alt="竹下通り">
+			<img src="assets/images/tokyo/TNM_ogp.jpg" alt="東京国立博物館">
+			<img src="assets/images/tokyo/meijijingu-torii.jpg" alt="明治神宮">
+			<img src="assets/images/tokyo/sansyain.jpg" alt="サンシャイン水族館">
+
+		</div>
+		<!-- <div class="kankou-slider">
+			<div id="l1" class="list-menu">
+				<img src="assets/images/oita/original.jpg" alt="平和記念公園">
+				<h4>平和記念公園</h4>
+				<p>世界の恒久平和を願って爆心地に近いこの場所に建設されました。<br>平和への願いを込めて鳴らされる平和の鐘の音は、環境省が選んだ、残したい日本の音風景100選にも選ばれています。</p>
+			</div>
+			
+			<div id="l2" class="list-menu">
+				<img src="assets/images/oita/140-top.jpg" alt="宮島">
+				<h4>厳島神社</h4>
+				<p>推古天皇元年（593）、<font color=#a910c4><ruby>佐伯鞍職<rt>さえきくらもと</rt></ruby></font>によりご創建と伝えられています。<br>原始宗教のなごりで、島全体が神の島として崇められていましたので、陸地では畏れ多いと潮の満ち引きするところに社が建てられました。</p>
+			</div>
+			
+			<div id="l3" class="list-menu">
+				<img src="assets/images/oita/140-top.jpg" alt="宮島">
+				<h4>厳島神社</h4>
+				<p>推古天皇元年（593）、<font color=#a910c4><ruby>佐伯鞍職<rt>さえきくらもと</rt></ruby></font>によりご創建と伝えられています。<br>原始宗教のなごりで、島全体が神の島として崇められていましたので、陸地では畏れ多いと潮の満ち引きするところに社が建てられました。</p>
+			</div>
+
+			<div id="l4" class="list-menu">
+				<img src="assets/images/oita/140-top.jpg" alt="宮島">
+				<h4>厳島神社</h4>
+				<p>推古天皇元年（593）、<font color=#a910c4><ruby>佐伯鞍職<rt>さえきくらもと</rt></ruby></font>によりご創建と伝えられています。<br>原始宗教のなごりで、島全体が神の島として崇められていましたので、陸地では畏れ多いと潮の満ち引きするところに社が建てられました。</p>
+			</div>
+
+			<div id="l5" class="list-menu">
+				<img src="assets/images/oita/140-top.jpg" alt="宮島">
+				<h4>厳島神社</h4>
+				<p>推古天皇元年（593）、<font color=#a910c4><ruby>佐伯鞍職<rt>さえきくらもと</rt></ruby></font>によりご創建と伝えられています。<br>原始宗教のなごりで、島全体が神の島として崇められていましたので、陸地では畏れ多いと潮の満ち引きするところに社が建てられました。</p>
+			</div>
+		</div> -->
+
+	<h2>ホテル</h2>
+	<div id="hotel">
+		<div id="box1">
+			<img src="assets/images/tokyo/mv_facility01.jpg" alt="なにかの写真">
+			<a href="https://www.hotel-livemax.com/kanagawa/sagamiharast/" target="_blank">
+				ホテルリブマックス相模原駅前 
+			</a>
+			<p>
+				全国にあるホテルリブマックスで一泊の値段が破格です！！<br>
+                評価もいいのでおすすめです
+			</p>
+			<p>【所在地】
+				〒252-0231 神奈川県相模原市中央区相模原7-1-28<br>
+	
+				【アクセス情報】
+				橋本駅→相模原駅まで 約2分<br>
+                八王子駅→相模原駅まで 約15分<br>
+                町田駅→相模原駅まで 約10分</br>
+			</p>
+		</div>
+		<div id="box2"> 
+			<img src="assets/images/tokyo/42920131300000023.jpg" alt="なにかの写真">
+			<a href="https://www.mystays.com/hotel-mystays-atsugi-kanagawa/" target="_blank">
+				ホテルマイステイズ厚木
+			</a>
+			<p>
+				駅から近く格安です！！<br>
+                評価もいいのでおすすめです
+			</p>
+			<p>【所在地】
+				〒243-0017 神奈川県厚木市栄町１丁目１−８<br>
+	
+				【アクセス情報】
+				小田急線「本厚木」駅より徒歩6分
+				東名高速道路「厚木」ICより約10分</br>
+			</p>
+		</div>
+	</div>
+	<h2>交通手段</h2>
+	<div id="O_transportation">
+		<ul id="O_title_tab">
+			<li id="O_text_title_KM">
+	
+			</li>
+		</ul>
+		<p id="O_text_explanation_KM">
+
+		</p>
+		<ul id="O_title_tab2">
+			<li id="O_text_title_GP">
+				
+			</li>
+		</ul>
+		<p id="O_text_explanation_GP">
+			
+		</p>
+		<p id="O_text_buss">高速バス　22:00発8:12着往復17600円</p>
+	</div>
+	<h2>お土産</h2>
+	<div id="souvenir">
+		<div id="box1">
+			<img src="assets/images/tokyo/karinto.jpg" alt="日本橋錦豊琳">
+			<a href="https://www.nishikihorin.com/products/t008.html" target="_blank">日本橋錦豊琳</a>
+		</div>
+		<div id="box2">
+			<img src="assets/images/tokyo/d25606-344-112753-8.jpg" alt="じゃがボルダ">
+			<a href="https://www.jaga-boulde.jp/jaga-boulde/index.html" target="_blank">Calbee＋×東京ばな奈 じゃがボルダ<br>
+                鰹と昆布のうまみだし味</a>
+		</div>
+
+	</div>
+
+</div><!--/.Oita-block-->
+
+
+
+
+</section>
+
+</div>
+<!--/#main-->
+
+<div id="sub">
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+
+
+</div>
+<!--/#sub-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">SAMPLE WEB SITE</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="link.html">LINK</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="kyusyu.html">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script type="module" src="./js/Kindex.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
+
+<botton class="slick-prev slick-arrow" aria-label="Previous" type="button"style="">Previous</botton>
+<botton class="slick-prev slick-arrow" aria-label="Next" type="button"style="">Next</botton>
+
+<noscript>
+	<h2>JavaScriptが向こう水です。</h2>
+	<p>ぶらうざのせっていをしてからさいどおｓたｍしてくｄさいさｌ。</p>
+  </noscript>
+</body>
+</html>

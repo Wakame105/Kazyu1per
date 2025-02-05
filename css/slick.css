@@ -106,5 +106,5 @@
     visibility: hidden;
 }
 .slick-arrow.slick-hidden {
-    display: flex;
+    display: none;
 }

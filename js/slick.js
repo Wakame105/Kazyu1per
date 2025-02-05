@@ -48,19 +48,19 @@ $('.slider').slick({
     ],
 });
 });
-// $('.kankou-slider').slick({
-//     autoplay: true,
-//     arrows: true,
-//     autoplaySpeed: 4000,
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     responsive: [
-//         {
-//             breakpoint: 768,
-//             settings: {
-//                 slidesToShow: 1,
-//             },
-//         },
-//     ],
-// });
+$('.kankou-slider').slick({
+    autoplay: true,
+    arrows: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            },
+        },
+    ],
+});

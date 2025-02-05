@@ -12,22 +12,7 @@
 #main .photo-block a{
 	padding: 0;
 }
-#food_spots,#hotel,#souvenir{
-	display: flex;
-	justify-content: space-around;
-}
-#food_spots img,#hotel img,#souvenir img{
-	width: auto;
-	height: 200px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-#food_spots a{
-	font-size: 90%;
-}
-#food_spots p{
-	font-size: 90%;
-}
+
 #box1{
 	padding: 5px;
 	width: 50%;

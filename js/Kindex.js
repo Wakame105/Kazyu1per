@@ -3,6 +3,9 @@ let tab = $('#O_text_title_KM');
 let obj =  $("#O_text_explanation_KM");
 let tab2 = $('#O_text_title_GP');
 let obj2 =  $("#O_text_explanation_GP");
+let lb_PH = $(".lb-tag_a");
+let T_tab = $('#O_title_tab');
+let T_tab2 = $('#O_title_tab2');
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
     // {
@@ -16,10 +19,14 @@ tab.on('click',function(){
     //     obj.addClass('active');
     //     $(this).addClass('active');
     // } 
+    // obj.slideToggle();
     obj.slideToggle();
+  T_tab.toggleClass('open');
 })
 tab2.on('click',function(){
+    // obj2.slideToggle();
     obj2.slideToggle();
+  T_tab2.toggleClass('open');
 })
 
 //==========================Jsonから読み取り=========================
@@ -41,5 +48,22 @@ $(function(){
         );
     });
 });
-
-
+if($.cookie('percent')){
+    $bar.style.width = `${ per }%`;
+    let pix_top =  ($body.offsetHeight*per)/100;
+   // $('body,html').animate({scrollTop:pix_top},400,'swing');
+  }
+  let onscroll = ()=>{
+    let $body = document.getElementsByTagName('body')[0];
+  };
+if( !window.scrollTop ) {
+  window.addEventListener('scroll',onscroll,false);
+}
+setScrollPos();
+//================上にスムーズスクロール page to top============================
+let button_a =  $('#navi_button');
+$(function(){   
+  button_a.on('click',function(){
+  $('html, body').animate({scrollTop:0},300);
+  })
+})

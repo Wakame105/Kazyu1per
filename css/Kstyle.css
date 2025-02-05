@@ -93,7 +93,8 @@ a:hover{
 	padding: 5px;
 }
 #main .transport ul li::after{
-    content: "";
+    transition: all 0.5s;
+	content: "";
     position: absolute;
     top:auto;
     bottom: auto;
@@ -103,6 +104,12 @@ a:hover{
     height: .5em;
     margin: auto;
     background: no-repeat center/110% url('../assets/images/oita/underTriangle.png');
+}
+#main .open #O_text_title_KM::after{
+	transform:rotate(180deg);
+}
+#main .open #O_text_title_GP::after{
+	transform:rotate(180deg);
 }
 iframe{
 	padding-bottom: 10px;
@@ -132,6 +139,15 @@ iframe{
 /*画面幅1250px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:1250px){
+	ul{
+		font-size: 12px;
+	}
+	#maru_C{
+		font-size: 8px;
+	}
+	#food_spots img,#hotel img,#souvenir img,#sightseeing_spots img{
+		height: 50%;
+	}
 	#O_title_tab li::after{
 		right: 6em;
 	}

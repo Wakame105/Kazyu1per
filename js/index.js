@@ -54,6 +54,9 @@ function change_obj(){
         if(obj.CPR_Type=='T'){
             GC_CPR.text("提供:");
         }
+        else if(obj.CPR_Type=='ST'){
+            GC_CPR.text("写真提供:")
+        }
         else if(obj.CPR_Type=='C'){
             GC_CPR.text("©");
         }
@@ -75,5 +78,6 @@ function GetRandomNumber(){
     }
     while(now_num === random_num);
     now_num=random_num;
+    console.log(random_num);
     $.cookie('before_num',`${ now_num }`,{expires:1});
 }

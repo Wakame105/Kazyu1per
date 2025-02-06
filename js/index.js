@@ -78,6 +78,5 @@ function GetRandomNumber(){
     }
     while(now_num === random_num);
     now_num=random_num;
-    console.log(random_num);
     $.cookie('before_num',`${ now_num }`,{expires:1});
 }

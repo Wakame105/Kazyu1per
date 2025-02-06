@@ -20,7 +20,7 @@ body {
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	background: #fff url(../assets/images/bg1.jpg);	/*背景色、背景画像の読み込み*/
-	
+	height:auto;
 	-webkit-text-size-adjust: none;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
@@ -61,6 +61,7 @@ a:hover {
 }
 
 .tihou1 {
+	top: 180%;
 	bottom: 0px;
 	right: 20%;
 	margin: auto 0;
@@ -108,15 +109,33 @@ header #logo {
 	
 }
 /*h3タグ*/
-#image-carousel .kankou-slider {
+#special-list .kankou-slider {
 	width: 940px;
-	margin: 0 auto;
-	display: flex;
+	margin-left: 0 auto;
+    margin-right:0 auto;
 }
 
-.list-menu:hover img {
-	transform: scale(1.1);
-    width: 100%;
+.kankou-slider {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-menu {
+	/* display: block; */
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 1.1em;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+	box-sizing: border-box;
+}
+
+.list-menu img {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -124,7 +143,7 @@ header #logo {
 }
 
 @media screen and (max-width: 768px) {
-    #image-carousel .kankou-slider {
+    .kankou-slider {
         width: 90%;
         margin: 0 auto;
     }
@@ -175,12 +194,6 @@ header #logo {
 	border-radius: 50%;
 }
 
-.kankou-slider {
-	width: 940px;
-	margin: 0 auto;
-	display: flex;
-}
-
 .list-menu {
 	margin: 10px;
 	padding: 15px;
@@ -209,7 +222,13 @@ header #logo {
 ---------------------------------------------------------------------------*/
 /*メニューブロック全体の設定*/
 #menubar {
-	margin-bottom: 20px;	/*メニューブロックの下にあけるスペース*/
+	margin-bottom: 0px;	/*メニューブロックの下にあけるスペース*/
+	height: auto; 
+    min-height: 50px; 
+}
+#menubar li {
+    margin: 0;
+    padding: 0;
 }
 /*メニュー１個ごとの設定*/
 #menubar li a {
@@ -221,7 +240,10 @@ header #logo {
 #menubar-s {display: none;}
 /*３本バーアイコンを表示させない*/
 #menubar_hdr {display: none;}
-
+#menubar ul {
+    margin: 0;
+    padding: 0;
+}
 /*footerブロック
 ---------------------------------------------------------------------------*/
 footer {
@@ -646,38 +668,6 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
 }
 
-/* スライダー全体のスタイル */
-.slider {
-    display:flex;
-    overflow:scroll;
-}
-
-/* スライド内のアイテム */
-.kankou-slider .list-menu {
-    text-align: center;
-    padding: 10px;
-}
-
-/* 画像スタイル */
-.kankou-slider img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* 角を丸める例 */
-}
-
-/* h4 のスタイル */
-.kankou-slider h4 {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-}
-
-/* p のスタイル */
-.kankou-slider p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555;
-}
 /* .btn::before {
 	background: linear-gradient(135deg, #6fa24a, #15a1cc);
 	filter: blur(8px);
@@ -695,3 +685,34 @@ img.fr,img.fl {float: none;margin: 0;width: 100%;}
 		opacity: 1;
 	}
 } */
+
+.container{
+	display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section {
+	padding: 20px;
+    border: 1px solid #ccc;
+}
+h2 {
+	margin-top: 50px;
+}
+
+#food_spots,#hotel,#souvenir{
+	display: flex;
+	justify-content: space-around;
+}
+#food_spots img,#hotel img,#souvenir img{
+	width: 400px;
+	height: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#food_spots a{
+	font-size: 90%;
+}
+#food_spots p{
+	font-size: 90%;
+}

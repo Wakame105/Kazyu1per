@@ -6,7 +6,6 @@ let obj2 =  $("#O_text_explanation_GP");
 let lb_PH = $(".lb-tag_a");
 let T_tab = $('#O_title_tab');
 let T_tab2 = $('#O_title_tab2');
-
 tab.on('click',function(){
     // if(obj.hasClass('active'))下のやつでええやん
     // {

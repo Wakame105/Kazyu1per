@@ -47,6 +47,7 @@ h4{
 }
 #food_spots p{
 	font-size: 90%;
+	margin: auto;
 }
 .box{
 	padding: 5px;
@@ -165,6 +166,15 @@ iframe{
 /*画面幅1250px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:1250px){
+	ul{
+		font-size: 12px;
+	}
+	#maru_C{
+		font-size: 8px;
+	}
+	#food_spots img,#hotel img,#souvenir img,#sightseeing_spots img{
+		height: 50%;
+	}
 	#O_title_tab li::after{
 		right: 6em;
 	}
